@@ -306,7 +306,7 @@ async function pageOffres() {
     .sort((x, y) => x.localeCompare(y, "fr"));
   if ($("f-ville")) villes.forEach((v) => $("f-ville").append(el("option", { value: v, text: `${v} (${nParVille[v] || 0})` })));
   contrats.forEach((c) => $("f-contrat").append(el("option", { value: c, text: c })));
-  zones.forEach((z) => $("f-zone").append(el("option", { value: z, text: z.replace(" (ou département non précisé)", "") })));
+  if ($("f-zone")) zones.forEach((z) => $("f-zone").append(el("option", { value: z, text: z.replace(" (ou département non précisé)", "") })));
 
   // Recherche « autour de » : la commune tapée est cherchée dans l'API publique geo.api.gouv.fr,
   // puis on garde les offres situées à moins du rayon choisi (distance à vol d'oiseau).
@@ -343,7 +343,7 @@ async function pageOffres() {
   let limite = 40;
   const fold = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const rendre = () => {
-    const q = fold($("q").value), c = $("f-contrat").value, z = $("f-zone").value, tt = $("f-tt").checked;
+    const q = fold($("q").value), c = $("f-contrat").value, z = $("f-zone") ? $("f-zone").value : "", tt = $("f-tt").checked;
     const v = $("f-ville") ? $("f-ville").value : "";
     let ok = offres.filter((o) => (!c || o.contrat === c) && (!z || o.zone === z) && (!v || o.ville === v) && (!tt || o.teletravail !== "non")
       && (!q || fold(`${o.intitule} ${o.entreprise} ${o.lieu}`).includes(q)));

@@ -166,7 +166,7 @@ details.limits li + li { margin-top: .4rem; }
 .position p:last-child { margin: 0; }
 
 /* ---------- offres ---------- */
-.toolbar { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: .7rem; align-items: center; margin-bottom: 1rem; }
+.toolbar { display: grid; grid-template-columns: 2fr 1fr auto; gap: .7rem; align-items: center; margin-bottom: 1rem; }
 .toolbar input, .toolbar select { font: inherit; padding: .65rem .9rem; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); width: 100%; }
 .toolbar label { font-size: .88rem; font-weight: 600; color: var(--ink-soft); display: flex; gap: .4rem; align-items: center; white-space: nowrap; }
 .toolbar-geo { display: grid; grid-template-columns: 2fr 1fr 2fr; gap: .7rem; align-items: center; margin-bottom: 1rem; }
