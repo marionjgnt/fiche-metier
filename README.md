@@ -1,6 +1,6 @@
-# Marketing digital, compté
+# Marketing digital & opérationnel, compté
 
-Site qui compte le marché du métier de **chargé(e) de marketing digital** à partir des offres d'emploi
+Site qui compte le marché du métier de **chargé(e) de marketing digital et opérationnel** à partir des offres d'emploi
 publiées sur France Travail, et qui se met à jour seul chaque mardi et vendredi.
 
 > **Origine du code.** Ce projet est une adaptation du projet
@@ -9,9 +9,9 @@ publiées sur France Travail, et qui se met à jour seul chaque mardi et vendred
 
 ## Le métier ciblé
 
-- **Intitulé :** Chargé(e) de marketing digital (marketing de performance, marketing client, événementiel)
-- **Requêtes :** mots-clés « marketing digital », « marketing numerique », « webmarketing » (pas de code ROME)
-- **Sélection :** seules les offres dont l'intitulé contient « marketing digital » (ou numérique, web,
+- **Intitulé :** Chargé(e) de marketing digital et opérationnel (marketing de performance, marketing client, événementiel)
+- **Requêtes :** mots-clés « marketing digital », « marketing operationnel », « marketing numerique », « webmarketing » (pas de code ROME)
+- **Sélection :** seules les offres dont l'intitulé contient « marketing digital » ou « marketing opérationnel » (ou numérique, web,
   e-marketing, digital marketing) sont gardées ; les autres sont comptées puis écartées.
 
 ## Ce qui a changé par rapport au projet d'origine
@@ -19,7 +19,7 @@ publiées sur France Travail, et qui se met à jour seul chaque mardi et vendred
 | Élément | Projet d'origine | Cette version |
 |---|---|---|
 | Sélection | code ROME E1101 + mots-clés | mots-clés + filtre sur l'intitulé (pas de code ROME) |
-| Mots-clés | « community manager » | « marketing digital », « marketing numerique », « webmarketing » |
+| Mots-clés | « community manager » | « marketing digital », « marketing operationnel », « marketing numerique », « webmarketing » |
 | Outils et compétences repérés | réseaux sociaux, création visuelle… | acquisition (Google Ads, Meta Ads), data (GA4, Looker Studio), CRM et automation, SEO et e-commerce, événementiel, print… |
 | Marché caché (63) | agences de pub, régie, conseil en communication | agences de pub, conseil en communication, études de marché, e-commerce |
 | Repère salaire MétierScope | fiche Community manager | à renseigner (voir `scripts/analyse_offres.py`) |
@@ -52,7 +52,7 @@ La GitHub Action `.github/workflows/veille.yml` enchaîne ces trois scripts chaq
 
 - Seules les offres diffusées par France Travail (et ses partenaires) sont visibles.
 - Le filtre sur l'intitulé garde assistant, chargé et responsable : le niveau de poste varie.
-- Une offre de marketing digital au titre différent (ex. « chargé de marketing » seul) est écartée.
+- Une offre de marketing au titre différent (ex. « chargé de marketing » seul) est écartée.
 - Outils et compétences sont repérés par mots-clés : une mention n'est pas une exigence.
 - Les salaires ne sont comptés que lorsqu'ils sont affichés.
 

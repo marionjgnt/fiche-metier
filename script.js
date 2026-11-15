@@ -113,8 +113,8 @@ async function pageAccueil() {
   // le métier
   const rome = $("rome");
   const dd = (k, v) => rome.append(el("dt", { text: k }), el("dd", { text: v }));
-  dd("Métier visé", m.metier || "Chargé(e) de marketing digital");
-  dd("Sélection", "offres dont l'intitulé contient « marketing digital » (ou numérique, web, e-marketing)");
+  dd("Métier visé", m.metier || "Chargé(e) de marketing digital et opérationnel");
+  dd("Sélection", "offres dont l'intitulé contient « marketing digital » ou « marketing opérationnel » (ou numérique, web, e-marketing)");
   dd("Code ROME le plus fréquent", m.rome_libelle || "—");
   dd("Offres analysées", `${fmt(n)} (dont ${fmt(m.offres_avec_texte)} avec texte complet)`);
   dd("Période des offres", `${fmtDate(m.date_plus_ancienne)} → ${fmtDate(m.date_plus_recente)}`);
@@ -260,7 +260,7 @@ async function pageAccueil() {
   }
   const lk = $("linkedin"), li = c && c.linkedin;
   lk.append(el("strong", { text: "À la main, sur LinkedIn : " }),
-    li && li.profils_reperes ? `${li.profils_reperes} profils de chargé(e)s de marketing digital repérés. ` : "repérage des personnes qui portent ce titre dans les entreprises ci-dessus. ",
+    li && li.profils_reperes ? `${li.profils_reperes} profils de chargé(e)s de marketing digital ou opérationnel repérés. ` : "repérage des personnes qui portent ce titre dans les entreprises ci-dessus. ",
     li ? li.note : "");
 
   // plan et position

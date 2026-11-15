@@ -1,7 +1,7 @@
 {
  "meta": {
   "date_donnees": "2026-11-15T16:57:27+00:00",
-  "date_analyse": "2026-11-15T17:05:07+00:00",
+  "date_analyse": "2026-11-15T17:07:34+00:00",
   "canal": "API France Travail — Offres d'emploi v2",
   "requetes": [
    {
@@ -760,19 +760,14 @@
   ],
   "api_competences": [
    {
-    "libelle": "Concevoir des supports de communication et d'image",
-    "n": 9,
-    "pct": 9.7
-   },
-   {
     "libelle": "Optimiser la visibilité des publications sur les réseaux sociaux",
     "n": 9,
     "pct": 9.7
    },
    {
-    "libelle": "Mesurer le retour sur investissement d'une action marketing",
-    "n": 7,
-    "pct": 7.5
+    "libelle": "Concevoir des supports de communication et d'image",
+    "n": 9,
+    "pct": 9.7
    },
    {
     "libelle": "Analyser les besoins des utilisateurs pour la création de contenus multimédias",
@@ -785,12 +780,17 @@
     "pct": 7.5
    },
    {
-    "libelle": "Effectuer un reporting régulier à la hiérarchie",
+    "libelle": "Mesurer le retour sur investissement d'une action marketing",
+    "n": 7,
+    "pct": 7.5
+   },
+   {
+    "libelle": "Concevoir des visuels pour des campagnes publicitaires",
     "n": 2,
     "pct": 2.2
    },
    {
-    "libelle": "Concevoir des visuels pour des campagnes publicitaires",
+    "libelle": "Effectuer un reporting régulier à la hiérarchie",
     "n": 2,
     "pct": 2.2
    },
@@ -800,12 +800,12 @@
     "pct": 2.2
    },
    {
-    "libelle": "Création de supports de communication graphique.",
+    "libelle": "- Organisation et coordination d'événements.",
     "n": 1,
     "pct": 1.1
    },
    {
-    "libelle": "- Organisation et coordination d'événements.",
+    "libelle": "Création de supports de communication graphique.",
     "n": 1,
     "pct": 1.1
    },
@@ -815,7 +815,7 @@
     "pct": 1.1
    },
    {
-    "libelle": "Surveiller les stocks virtuels pour ajuster les offres",
+    "libelle": "Logiciels de gestion de base de données",
     "n": 1,
     "pct": 1.1
    }
@@ -1533,7 +1533,7 @@
  },
  "limites": [
   "Photographie du 15/11/2026 : seules les offres déposées à France Travail (et ses partenaires) et encore ouvertes sont visibles. Ce n'est ni le total annuel ni l'ensemble du marché : beaucoup de recrutements ne passent jamais par une annonce.",
-  "Seules les offres dont l'intitulé parle de marketing digital (ou numérique, web, e-marketing) sont gardées : 96 offres remontées par les mots-clés mais portant un autre intitulé ont été écartées. Le niveau de poste varie (assistant, chargé, responsable) : voir les intitulés en section 1.",
+  "Seules les offres dont l'intitulé parle de marketing digital ou opérationnel (ou numérique, web, e-marketing) sont gardées : 96 offres remontées par les mots-clés mais portant un autre intitulé ont été écartées. Le niveau de poste varie (assistant, chargé, responsable) : voir les intitulés en section 1.",
   "Le salaire n'est affiché que dans 15.1 % des offres ; les moyennes ne reflètent que les employeurs qui le publient. Les salaires d'alternance suivent une grille légale et sont séparés.",
   "Une même offre peut être republiée plusieurs fois, ou par plusieurs agences : les volumes peuvent être gonflés.",
   "Compétences, outils et télétravail sont détectés par mots-clés dans le texte des annonces : une mention n'est pas une exigence, et un outil non cité peut quand même être utilisé.",
