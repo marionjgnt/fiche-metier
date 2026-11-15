@@ -1,0 +1,50 @@
+name: Veille France Travail
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: 1. Collecter les offres (API France Travail)
+        env:
+          FRANCE_TRAVAIL_CLIENT_ID: ${{ secrets.FRANCE_TRAVAIL_CLIENT_ID }}
+          FRANCE_TRAVAIL_CLIENT_SECRET: ${{ secrets.FRANCE_TRAVAIL_CLIENT_SECRET }}
+        run: python scripts/fetch_offres.py
+
+      - name: 2. Collecter les entreprises du département (API Recherche d'entreprises)
+        continue-on-error: true
+        run: python scripts/fetch_entreprises.py
+
+      - name: 3. Analyser (chiffres, outils, acteurs)
+        run: python scripts/analyse_offres.py
+
+      - name: 4. Enregistrer les données datées
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add data/*.json data/csv/*.csv
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau, pas de commit."
+          else
+            git commit -m "Veille automatique : données du $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi

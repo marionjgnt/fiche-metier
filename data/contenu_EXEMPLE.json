@@ -1,0 +1,34 @@
+{
+  "_mode_d_emploi": "Modèle à recopier dans data/contenu.json. Remplace chaque texte entre < > par le tien. Ce fichier-ci n'est pas lu par le site.",
+  "evolution": {
+    "source": {
+      "titre": "<titre de l'étude ou de l'article sur l'évolution du métier (Apec, France Travail, WEF...)>",
+      "url": "<adresse de la page>",
+      "date": "<date de publication>",
+      "points": ["<idée clé 1>", "<idée clé 2>", "<idée clé 3>"],
+      "limite": "<ce que cette source ne dit pas sur ton métier>"
+    },
+    "professionnels": [
+      {
+        "profil": "<poste et type d'entreprise, sans nom de personne>",
+        "date": "<date de l'échange>",
+        "statut": "a_completer",
+        "metier": "<ce que fait cette personne, d'après son profil public>",
+        "points": ["<ce qu'elle a dit de l'évolution du métier>"]
+      }
+    ]
+  },
+  "linkedin": {
+    "profils_reperes": 0,
+    "note": "<comment tu as repéré les profils, à quelle date, ce que tu en retiens — sans nom ni coordonnée>"
+  },
+  "plan": [
+    {"date": "<D'ici le ...>", "action": "<action 1>", "preuve": "<preuve attendue>"},
+    {"date": "<...>", "action": "<action 2>", "preuve": ""},
+    {"date": "<...>", "action": "<action 3>", "preuve": ""}
+  ],
+  "position": {
+    "conclusion": "<ce que tu conclus sur le métier, chiffres du site à l'appui>",
+    "ce_que_je_cherche": "<le poste que tu vas chercher et comment>"
+  }
+}
