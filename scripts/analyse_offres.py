@@ -296,7 +296,14 @@ def main() -> None:
     src = load_json(F_OFFRES, None)
     if not src or not src.get("offres"):
         raise SystemExit("data/offres.json vide ou absent : lancez d'abord scripts/fetch_offres.py")
-    offres = src["offres"]
+    # Les offres de franchise (recrutement de franchisés, souvent une même annonce
+    # publiée ville par ville) ne sont pas des emplois : on les écarte.
+    def est_franchise(o: dict) -> bool:
+        return ((o.get("type_contrat") or "").upper() == "FRA" or fold(o.get("contrat")).startswith("franchise")
+                # postes d'enseignement du marketing digital : autre métier
+                or bool(re.search(r"format(?:eur|rice)|enseignant|professeur|intervenant", fold(o.get("intitule")))))
+    franchises = [o for o in src["offres"] if est_franchise(o)]
+    offres = [o for o in src["offres"] if not est_franchise(o)]
     n = len(offres)
     maj = src.get("derniere_maj")
     date_maj = datetime.fromisoformat(maj).date() if maj else datetime.now(timezone.utc).date()
@@ -481,6 +488,8 @@ def main() -> None:
         "Compétences, outils et télétravail sont détectés par mots-clés dans le texte des annonces : "
         "une mention n'est pas une exigence, et un outil non cité peut quand même être utilisé.",
         f"{sans_nom} offres ({pct(sans_nom, n)} %) n'indiquent pas l'employeur (annonces anonymisées).",
+        f"{len(franchises)} annonces ont été écartées : recrutement de franchisés (un même réseau publie souvent la même "
+        "annonce dans des dizaines de villes) et postes de formateur ou d'enseignant en marketing digital.",
         "Le classement « intermédiaire / employeur direct » est automatique (mots du nom) et à vérifier.",
     ]
     if avec_texte < n:
