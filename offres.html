@@ -24,8 +24,8 @@
   <div class="hero-inner" style="padding-bottom:4.5rem">
     <p class="eyebrow">Veille automatique · France Travail</p>
     <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Offres <span>en direct</span></h1>
-    <p class="hero-lead">Les offres de marketing digital et opérationnel collectées chaque mardi et vendredi sur l'API France Travail. Filtrez par contrat ou
-      télétravail, ou cherchez autour d'une commune.</p>
+    <p class="hero-lead">Les offres de marketing digital et opérationnel collectées chaque mardi et vendredi sur l'API France Travail. Filtrez par contrat,
+      zone, grande ville ou télétravail.</p>
     <div class="chips" id="hero-chips"></div>
   </div>
   <div class="hero-wave"></div>
@@ -36,18 +36,9 @@
     <div class="toolbar">
       <input type="search" id="q" placeholder="Rechercher un intitulé, une entreprise, une ville…" aria-label="Rechercher">
       <select id="f-contrat" aria-label="Contrat"><option value="">Tous les contrats</option></select>
+      <select id="f-zone" aria-label="Zones"><option value="">Zones</option></select>
+      <select id="f-ville" aria-label="Villes"><option value="">Villes</option></select>
       <label><input type="checkbox" id="f-tt"> Télétravail</label>
-    </div>
-    <div class="toolbar-geo">
-      <input type="search" id="autour" placeholder="Autour de… (ex. Riom, 63200, Annecy)" aria-label="Rechercher autour d'une ville" autocomplete="off">
-      <select id="rayon" aria-label="Rayon">
-        <option value="10">10 km</option>
-        <option value="20">20 km</option>
-        <option value="40" selected>40 km</option>
-        <option value="80">80 km</option>
-        <option value="150">150 km</option>
-      </select>
-      <p class="geo-info" id="geo-info" aria-live="polite"></p>
     </div>
     <p class="count" id="count" aria-live="polite"></p>
     <div class="offres" id="liste"></div>

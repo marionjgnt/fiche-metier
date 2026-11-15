@@ -166,12 +166,10 @@ details.limits li + li { margin-top: .4rem; }
 .position p:last-child { margin: 0; }
 
 /* ---------- offres ---------- */
-.toolbar { display: grid; grid-template-columns: 2fr 1fr auto; gap: .7rem; align-items: center; margin-bottom: 1rem; }
+.toolbar { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: .7rem; align-items: center; margin-bottom: 1rem; }
 .toolbar input, .toolbar select { font: inherit; padding: .65rem .9rem; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); width: 100%; }
+.toolbar input[type="checkbox"] { width: auto; padding: 0; margin: 0; }
 .toolbar label { font-size: .88rem; font-weight: 600; color: var(--ink-soft); display: flex; gap: .4rem; align-items: center; white-space: nowrap; }
-.toolbar-geo { display: grid; grid-template-columns: 2fr 1fr 2fr; gap: .7rem; align-items: center; margin-bottom: 1rem; }
-.toolbar-geo input, .toolbar-geo select { font: inherit; padding: .65rem .9rem; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); width: 100%; }
-.geo-info { margin: 0; font-size: .85rem; color: var(--ink-soft); }
 .count { color: var(--muted); font-size: .88rem; margin: 0 0 1rem; }
 .offres { display: grid; gap: .8rem; }
 .offre { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.3rem; display: grid; gap: .5rem; box-shadow: var(--shadow); }
@@ -190,8 +188,6 @@ footer { border-top: 1px solid var(--line); margin-top: 3rem; }
   .nav-links { width: 100%; margin-left: 0; }
   .toolbar { grid-template-columns: 1fr 1fr; }
   .toolbar input { grid-column: 1 / -1; }
-  .toolbar-geo { grid-template-columns: 2fr 1fr; }
-  .geo-info { grid-column: 1 / -1; }
   .bar-row { grid-template-columns: 1fr auto; }
   .bar-row .bar-track { grid-column: 1 / -1; order: 3; }
   .hero-inner { padding-top: 3rem; }

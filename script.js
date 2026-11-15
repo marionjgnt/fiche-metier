@@ -306,58 +306,15 @@ async function pageOffres() {
     .sort((x, y) => x.localeCompare(y, "fr"));
   if ($("f-ville")) villes.forEach((v) => $("f-ville").append(el("option", { value: v, text: `${v} (${nParVille[v] || 0})` })));
   contrats.forEach((c) => $("f-contrat").append(el("option", { value: c, text: c })));
-  if ($("f-zone")) zones.forEach((z) => $("f-zone").append(el("option", { value: z, text: z.replace(" (ou département non précisé)", "") })));
-
-  // Recherche « autour de » : la commune tapée est cherchée dans l'API publique geo.api.gouv.fr,
-  // puis on garde les offres situées à moins du rayon choisi (distance à vol d'oiseau).
-  let centre = null; // { nom, dep, lat, lon }
-  const distanceKm = (a1, o1, a2, o2) => {
-    const r = Math.PI / 180, dLat = (a2 - a1) * r, dLon = (o2 - o1) * r;
-    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a1 * r) * Math.cos(a2 * r) * Math.sin(dLon / 2) ** 2;
-    return 12742 * Math.asin(Math.sqrt(h));
-  };
-  let minuteur = null, demande = 0;
-  const chercherCentre = () => {
-    clearTimeout(minuteur);
-    const texte = $("autour").value.trim();
-    if (texte.length < 2) { centre = null; $("geo-info").textContent = ""; limite = 40; rendre(); return; }
-    minuteur = setTimeout(async () => {
-      const num = ++demande;
-      $("geo-info").textContent = "Recherche de la commune…";
-      const params = /^\d{5}$/.test(texte) ? `codePostal=${texte}` : `nom=${encodeURIComponent(texte)}&boost=population`;
-      try {
-        const res = await fetch(`https://geo.api.gouv.fr/communes?${params}&fields=nom,centre,codeDepartement&limit=1`);
-        const [c] = res.ok ? await res.json() : [];
-        if (num !== demande) return; // une recherche plus récente a été lancée
-        centre = c && c.centre ? { nom: c.nom, dep: c.codeDepartement, lon: c.centre.coordinates[0], lat: c.centre.coordinates[1] } : null;
-        $("geo-info").textContent = centre ? "" : `Commune « ${texte} » introuvable.`;
-      } catch (err) {
-        if (num !== demande) return;
-        centre = null;
-        $("geo-info").textContent = "Recherche de commune indisponible pour le moment.";
-      }
-      limite = 40; rendre();
-    }, 350);
-  };
+  zones.forEach((z) => $("f-zone").append(el("option", { value: z, text: z.replace(" (ou département non précisé)", "") })));
 
   let limite = 40;
   const fold = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const rendre = () => {
-    const q = fold($("q").value), c = $("f-contrat").value, z = $("f-zone") ? $("f-zone").value : "", tt = $("f-tt").checked;
+    const q = fold($("q").value), c = $("f-contrat").value, z = $("f-zone").value, tt = $("f-tt").checked;
     const v = $("f-ville") ? $("f-ville").value : "";
-    let ok = offres.filter((o) => (!c || o.contrat === c) && (!z || o.zone === z) && (!v || o.ville === v) && (!tt || o.teletravail !== "non")
+    const ok = offres.filter((o) => (!c || o.contrat === c) && (!z || o.zone === z) && (!v || o.ville === v) && (!tt || o.teletravail !== "non")
       && (!q || fold(`${o.intitule} ${o.entreprise} ${o.lieu}`).includes(q)));
-    const dist = new Map();
-    if (centre) {
-      const rayon = Number($("rayon").value);
-      ok = ok.filter((o) => {
-        if (!o.gps) return false;
-        const d = distanceKm(centre.lat, centre.lon, o.gps[0], o.gps[1]);
-        dist.set(o, d);
-        return d <= rayon;
-      }).sort((x, y) => dist.get(x) - dist.get(y));
-      $("geo-info").textContent = `Autour de ${centre.nom} (${centre.dep}), dans un rayon de ${rayon} km, à vol d'oiseau.`;
-    }
     $("count").textContent = `${fmt(ok.length)} offre(s) sur ${fmt(offres.length)}`;
     $("vide").hidden = ok.length > 0;
     clear(liste);
@@ -365,7 +322,6 @@ async function pageOffres() {
       el("div", { class: "offre-head" }, el("div", {}, el("h3", { text: o.intitule }), el("div", { class: "offre-co", text: `${o.entreprise} · ${o.lieu || "lieu non précisé"}` })),
         o.url ? el("a", { class: "offre-link", href: o.url, target: "_blank", rel: "noopener", text: "Voir l'offre →" }) : null),
       el("div", { class: "offre-meta" },
-        dist.has(o) ? el("span", { class: "badge ok", text: dist.get(o) < 1 ? "sur place" : `à ${Math.round(dist.get(o))} km` }) : null,
         el("span", { class: "badge", text: o.contrat }),
         o.salaire && o.salaire_mensuel ? el("span", { class: "badge ok", text: `${eur(o.salaire_mensuel[0])}${o.salaire_mensuel[1] !== o.salaire_mensuel[0] ? ` – ${eur(o.salaire_mensuel[1])}` : ""} / mois` }) : null,
         o.teletravail === "complet" ? el("span", { class: "badge ok", text: "100 % télétravail" }) : o.teletravail === "mentionné" ? el("span", { class: "badge", text: "télétravail mentionné" }) : null,
@@ -377,8 +333,7 @@ async function pageOffres() {
       liste.append(el("div", { style: "text-align:center" }, more));
     }
   };
-  ["q", "f-contrat", "f-zone", "f-ville", "f-tt", "rayon"].filter((id) => $(id)).forEach((id) => $(id).addEventListener("input", () => { limite = 40; rendre(); }));
-  if ($("autour")) $("autour").addEventListener("input", chercherCentre);
+  ["q", "f-contrat", "f-zone", "f-ville", "f-tt"].filter((id) => $(id)).forEach((id) => $(id).addEventListener("input", () => { limite = 40; rendre(); }));
   rendre();
 }
 
