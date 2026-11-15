@@ -1,7 +1,7 @@
 # Marketing digital, compté
 
 Site qui compte le marché du métier de **chargé(e) de marketing digital** à partir des offres d'emploi
-publiées sur France Travail, et qui se met à jour seul chaque matin.
+publiées sur France Travail, et qui se met à jour seul chaque mardi et vendredi.
 
 > **Origine du code.** Ce projet est une adaptation du projet
 > [« Community manager, compté »](https://github.com/lolabodoin-design/community-manager-marche) :
@@ -39,7 +39,7 @@ publiées sur France Travail, et qui se met à jour seul chaque matin.
 | Collecte des entreprises du 63 (API Recherche d'entreprises, sans clé) | `scripts/fetch_entreprises.py` | `data/entreprises.json` |
 | Calculs (volumes, zones, contrats, salaires, outils, recruteurs, marché caché) | `scripts/analyse_offres.py` | `data/analyse.json`, `data/offres_site.json`, `data/historique.json`, `data/csv/*.csv` |
 
-La GitHub Action `.github/workflows/veille.yml` enchaîne ces trois scripts chaque jour à 5 h UTC.
+La GitHub Action `.github/workflows/veille.yml` enchaîne ces trois scripts chaque mardi et vendredi à 5 h UTC (6 h à Paris en hiver).
 
 ## Règle RGPD
 

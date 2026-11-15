@@ -2,7 +2,8 @@ name: Veille France Travail
 
 on:
   schedule:
-    - cron: "0 5 * * *"
+    # Chaque mardi et vendredi à 5 h UTC (6 h à Paris en hiver, 7 h en été)
+    - cron: "0 5 * * 2,5"
   workflow_dispatch: {}
 
 permissions:

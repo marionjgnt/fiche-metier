@@ -61,7 +61,7 @@ Ils vont uniquement dans les « secrets » GitHub (étape suivante).
 4. Dans GitHub Desktop, clique sur **Fetch origin** puis **Pull origin** pour récupérer ces données
    sur ton Mac aussi.
 
-Ensuite, la collecte se relance **toute seule chaque matin**.
+Ensuite, la collecte se relance **toute seule chaque mardi et vendredi matin**.
 
 ## Étape 6 — Mettre le site en ligne (2 min)
 
