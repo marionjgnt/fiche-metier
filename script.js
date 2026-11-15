@@ -299,8 +299,12 @@ async function pageOffres() {
 
   const contrats = [...new Set(offres.map((o) => o.contrat))].sort();
   const zones = [...new Set(offres.map((o) => o.zone))];
-  const villes = [...new Set(offres.map((o) => o.ville).filter(Boolean))].sort((x, y) => x.localeCompare(y, "fr"));
-  if ($("f-ville")) villes.forEach((v) => $("f-ville").append(el("option", { value: v, text: v })));
+  // Toutes les grandes villes suivies (même sans offre aujourd'hui), avec leur nombre d'offres.
+  const nParVille = {};
+  offres.forEach((o) => { if (o.ville) nParVille[o.ville] = (nParVille[o.ville] || 0) + 1; });
+  const villes = (a && a.geographie && a.geographie.villes ? a.geographie.villes.map((v) => v.ville) : Object.keys(nParVille))
+    .sort((x, y) => x.localeCompare(y, "fr"));
+  if ($("f-ville")) villes.forEach((v) => $("f-ville").append(el("option", { value: v, text: `${v} (${nParVille[v] || 0})` })));
   contrats.forEach((c) => $("f-contrat").append(el("option", { value: c, text: c })));
   zones.forEach((z) => $("f-zone").append(el("option", { value: z, text: z.replace(" (ou département non précisé)", "") })));
 
