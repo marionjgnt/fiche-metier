@@ -27,6 +27,7 @@ F_FORMATION = DATA / "formation.json"
 F_HISTO = DATA / "historique.json"
 F_OUT = DATA / "analyse.json"
 F_OFFRES_SITE = DATA / "offres_site.json"
+F_GEO_CACHE = DATA / "geo_cache.json"
 DIR_CSV = DATA / "csv"
 
 # Repère externe affiché à titre de comparaison (cité avec sa source sur le site).
@@ -115,6 +116,48 @@ def ville_de(o: dict) -> str | None:
     commune = re.sub(r"\s+\d+\s*(?:er|e|eme)?(?:\s+arrondissement)?$", "", commune)  # arrondissements
     commune = re.sub(r"\s*\(.*\)$", "", commune).strip()
     return VILLE_PAR_CLE.get(commune)
+
+
+# ------------------------------------------------------- coordonnées GPS
+# Pour la recherche « autour de » : chaque offre reçoit les coordonnées de sa commune.
+# Priorité aux coordonnées fournies par France Travail ; sinon, on cherche la commune par
+# son code postal dans l'API publique geo.api.gouv.fr (résultats gardés en cache).
+def coordonnees_offres(offres: list[dict]) -> dict[int, tuple[float, float]]:
+    import requests
+    cache = load_json(F_GEO_CACHE, {})
+    res, nouveaux = {}, 0
+    for o in offres:
+        lat, lon = o.get("latitude"), o.get("longitude")
+        if isinstance(lat, (int, float)) and isinstance(lon, (int, float)):
+            res[id(o)] = (round(lat, 4), round(lon, 4))
+            continue
+        cp = (o.get("code_postal") or "").strip()
+        if not (len(cp) == 5 and cp.isdigit()):
+            continue
+        commune = ville_brute(o)
+        cle = f"{cp}|{commune}"
+        if cle not in cache:
+            try:
+                r = requests.get("https://geo.api.gouv.fr/communes",
+                                 params={"codePostal": cp, "fields": "nom,centre"}, timeout=15)
+                cands = r.json() if r.ok else []
+            except Exception:  # noqa: BLE001 — réseau indisponible : on ignore
+                cands = []
+            choix = next((c for c in cands if fold(c.get("nom")) == commune), cands[0] if cands else None)
+            cache[cle] = choix["centre"]["coordinates"][::-1] if choix and choix.get("centre") else None
+            nouveaux += 1
+        if cache.get(cle):
+            res[id(o)] = tuple(round(x, 4) for x in cache[cle])
+    if nouveaux:
+        F_GEO_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
+    return res
+
+
+def ville_brute(o: dict) -> str:
+    lieu = o.get("lieu") or ""
+    commune = fold(lieu.split(" - ", 1)[1] if " - " in lieu else lieu).strip()
+    commune = re.sub(r"\s+\d+\s*(?:er|e|eme)?(?:\s+arrondissement)?$", "", commune)
+    return re.sub(r"\s*\(.*\)$", "", commune).strip()
 
 
 # ------------------------------------------------------------------ contrats
@@ -560,6 +603,7 @@ def main() -> None:
     F_OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 
     # Version légère des offres pour la page « Offres en direct » (sans le texte complet).
+    gps = coordonnees_offres(offres)
     outils_seuls = {nom for nom, cat, _ in TERMES if cat != CAT_MET}
     liste = []
     for o in offres:
@@ -569,6 +613,7 @@ def main() -> None:
             "lieu": o.get("lieu"), "zone": zone(o)[0], "ville": ville_de(o), "contrat": cat_de[id(o)], "contrat_libelle": o.get("contrat"),
             "salaire": o.get("salaire"), "salaire_mensuel": [round(s[0]), round(s[1])] if s else None,
             "teletravail": teletravail(o), "date": o.get("date_publication"), "url": o.get("url"),
+            "gps": list(gps[id(o)]) if id(o) in gps else None,
             "outils": sorted(t for t in presence[id(o)] if t in outils_seuls)[:6],
         })
     F_OFFRES_SITE.write_text(json.dumps({"date_donnees": maj, "offres": liste}, ensure_ascii=False,

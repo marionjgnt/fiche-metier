@@ -166,6 +166,8 @@ def simplifier(offre: dict, label: str) -> dict:
         "lieu": lieu.get("libelle"),
         "departement": departement(lieu),
         "code_postal": lieu.get("codePostal"),
+        "latitude": lieu.get("latitude"),
+        "longitude": lieu.get("longitude"),
         "contrat": offre.get("typeContratLibelle"),
         "type_contrat": offre.get("typeContrat"),
         "nature_contrat": offre.get("natureContrat"),

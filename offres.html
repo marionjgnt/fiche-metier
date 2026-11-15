@@ -40,6 +40,17 @@
       <select id="f-ville" aria-label="Villes"><option value="">Villes</option></select>
       <label><input type="checkbox" id="f-tt"> Télétravail</label>
     </div>
+    <div class="toolbar-geo">
+      <input type="search" id="autour" placeholder="Autour de… (ex. Riom, 63200, Annecy)" aria-label="Rechercher autour d'une ville" autocomplete="off">
+      <select id="rayon" aria-label="Rayon">
+        <option value="10">10 km</option>
+        <option value="20">20 km</option>
+        <option value="40" selected>40 km</option>
+        <option value="80">80 km</option>
+        <option value="150">150 km</option>
+      </select>
+      <p class="geo-info" id="geo-info" aria-live="polite"></p>
+    </div>
     <p class="count" id="count" aria-live="polite"></p>
     <div class="offres" id="liste"></div>
     <p class="empty" id="vide" hidden>Aucune offre ne correspond à ces filtres.</p>

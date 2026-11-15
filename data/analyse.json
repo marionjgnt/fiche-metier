@@ -1,7 +1,7 @@
 {
  "meta": {
   "date_donnees": "2026-11-15T17:08:37+00:00",
-  "date_analyse": "2026-11-15T17:10:17+00:00",
+  "date_analyse": "2026-11-15T17:16:00+00:00",
   "canal": "API France Travail — Offres d'emploi v2",
   "requetes": [
    {
@@ -480,15 +480,15 @@
     "vu_en_formation": false
    },
    {
-    "terme": "Vidéo / montage",
-    "categorie": "Réseaux sociaux et contenu",
+    "terme": "Emailing / newsletters",
+    "categorie": "CRM, emailing et automation",
     "n": 46,
     "pct": 41.8,
     "vu_en_formation": false
    },
    {
-    "terme": "Emailing / newsletters",
-    "categorie": "CRM, emailing et automation",
+    "terme": "Vidéo / montage",
+    "categorie": "Réseaux sociaux et contenu",
     "n": 46,
     "pct": 41.8,
     "vu_en_formation": false
@@ -529,15 +529,15 @@
     "vu_en_formation": false
    },
    {
-    "terme": "Trade marketing / animation commerciale",
-    "categorie": "Compétences métier",
+    "terme": "CRM (HubSpot, Salesforce…)",
+    "categorie": "CRM, emailing et automation",
     "n": 32,
     "pct": 29.1,
     "vu_en_formation": false
    },
    {
-    "terme": "CRM (HubSpot, Salesforce…)",
-    "categorie": "CRM, emailing et automation",
+    "terme": "Trade marketing / animation commerciale",
+    "categorie": "Compétences métier",
     "n": 32,
     "pct": 29.1,
     "vu_en_formation": false
@@ -772,14 +772,19 @@
   ],
   "api_competences": [
    {
+    "libelle": "Optimiser la visibilité des publications sur les réseaux sociaux",
+    "n": 10,
+    "pct": 9.1
+   },
+   {
     "libelle": "Concevoir des supports de communication et d'image",
     "n": 10,
     "pct": 9.1
    },
    {
-    "libelle": "Optimiser la visibilité des publications sur les réseaux sociaux",
-    "n": 10,
-    "pct": 9.1
+    "libelle": "Savoir gérer plusieurs projets ou activités simultanément",
+    "n": 8,
+    "pct": 7.3
    },
    {
     "libelle": "Analyser les besoins des utilisateurs pour la création de contenus multimédias",
@@ -792,9 +797,9 @@
     "pct": 7.3
    },
    {
-    "libelle": "Savoir gérer plusieurs projets ou activités simultanément",
-    "n": 8,
-    "pct": 7.3
+    "libelle": "Rédiger un rapport, un compte rendu d'activité",
+    "n": 3,
+    "pct": 2.7
    },
    {
     "libelle": "Mettre en place des solutions d'amélioration de la performance",
@@ -802,12 +807,7 @@
     "pct": 2.7
    },
    {
-    "libelle": "Rédiger un rapport, un compte rendu d'activité",
-    "n": 3,
-    "pct": 2.7
-   },
-   {
-    "libelle": "Effectuer un reporting régulier à la hiérarchie",
+    "libelle": "Concevoir des visuels pour des campagnes publicitaires",
     "n": 2,
     "pct": 1.8
    },
@@ -817,7 +817,7 @@
     "pct": 1.8
    },
    {
-    "libelle": "Concevoir des visuels pour des campagnes publicitaires",
+    "libelle": "Effectuer un reporting régulier à la hiérarchie",
     "n": 2,
     "pct": 1.8
    },
@@ -827,7 +827,7 @@
     "pct": 1.8
    },
    {
-    "libelle": "- Organisation et coordination d'événements.",
+    "libelle": "Création de supports de communication graphique.",
     "n": 1,
     "pct": 0.9
    }
@@ -864,12 +864,12 @@
     "pct": 1.8
    },
    {
-    "libelle": "Etre ouvert aux changements",
+    "libelle": "Faire preuve de leadership",
     "n": 1,
     "pct": 0.9
    },
    {
-    "libelle": "Faire preuve de leadership",
+    "libelle": "Etre ouvert aux changements",
     "n": 1,
     "pct": 0.9
    },
@@ -914,18 +914,18 @@
      "n": 53
     },
     {
-     "terme": "Gestion de projet / coordination",
-     "pct_recent": 46.6,
-     "pct_ancien": 22.7,
-     "ecart": 23.9,
-     "n": 46
-    },
-    {
      "terme": "Looker Studio / Power BI / dashboards",
      "pct_recent": 23.9,
      "pct_ancien": 0.0,
      "ecart": 23.9,
      "n": 21
+    },
+    {
+     "terme": "Gestion de projet / coordination",
+     "pct_recent": 46.6,
+     "pct_ancien": 22.7,
+     "ecart": 23.9,
+     "n": 46
     },
     {
      "terme": "Google Ads / SEA",
