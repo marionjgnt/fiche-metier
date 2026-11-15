@@ -99,6 +99,24 @@ def zone(o: dict) -> tuple[str, str | None]:
     return "Localisation non précisée (France entière / non renseignée)", None
 
 
+# ------------------------------------------------------------ grandes villes
+# Comptage par commune (pas par agglomération) : Boulogne-Billancourt n'est pas Paris.
+GRANDES_VILLES = ["Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Montpellier", "Strasbourg",
+                  "Bordeaux", "Lille", "Rennes", "Reims", "Toulon", "Saint-Étienne", "Le Havre", "Grenoble",
+                  "Dijon", "Angers", "Tours", "Rouen", "Clermont-Ferrand"]
+VILLE_PAR_CLE = {fold(v): v for v in GRANDES_VILLES}
+
+
+def ville_de(o: dict) -> str | None:
+    """Grande ville de l'offre, d'après la commune du lieu de travail (« 75 - Paris 8e Arrondissement »)."""
+    lieu = o.get("lieu") or ""
+    commune = lieu.split(" - ", 1)[1] if " - " in lieu else lieu
+    commune = fold(commune).strip()
+    commune = re.sub(r"\s+\d+\s*(?:er|e|eme)?(?:\s+arrondissement)?$", "", commune)  # arrondissements
+    commune = re.sub(r"\s*\(.*\)$", "", commune).strip()
+    return VILLE_PAR_CLE.get(commune)
+
+
 # ------------------------------------------------------------------ contrats
 def categorie_contrat(o: dict) -> str:
     intit = fold(o.get("intitule"))
@@ -316,6 +334,7 @@ def main() -> None:
 
     # --- géographie
     zones = Counter(); regions = Counter(); deps = Counter()
+    villes = Counter(v for v in (ville_de(o) for o in offres) if v)
     clermont = 0
     for o in offres:
         z, r = zone(o)
@@ -516,6 +535,9 @@ def main() -> None:
             "clermont_ferrand": clermont, "puy_de_dome": zones.get("Puy-de-Dôme (63)", 0),
             "regions": [{"region": r, "n": c, "pct": pct(c, n)} for r, c in regions.most_common(8)],
             "departements": [{"departement": d, "n": c} for d, c in deps.most_common(8)],
+            "villes": [{"ville": v, "n": villes.get(v, 0), "pct": pct(villes.get(v, 0), n)}
+                       for v in sorted(GRANDES_VILLES, key=lambda v: (-villes.get(v, 0), v))],
+            "villes_total": sum(villes.values()),
         },
         "teletravail": {"mentionne": tt["mentionné"] + tt["complet"], "complet": tt["complet"],
                         "pct_mentionne": pct(tt["mentionné"] + tt["complet"], n), "pct_complet": pct(tt["complet"], n)},
@@ -544,7 +566,7 @@ def main() -> None:
         s = parse_salaire(o.get("salaire"))
         liste.append({
             "id": o.get("id"), "intitule": o.get("intitule"), "entreprise": o.get("entreprise"),
-            "lieu": o.get("lieu"), "zone": zone(o)[0], "contrat": cat_de[id(o)], "contrat_libelle": o.get("contrat"),
+            "lieu": o.get("lieu"), "zone": zone(o)[0], "ville": ville_de(o), "contrat": cat_de[id(o)], "contrat_libelle": o.get("contrat"),
             "salaire": o.get("salaire"), "salaire_mensuel": [round(s[0]), round(s[1])] if s else None,
             "teletravail": teletravail(o), "date": o.get("date_publication"), "url": o.get("url"),
             "outils": sorted(t for t in presence[id(o)] if t in outils_seuls)[:6],

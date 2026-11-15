@@ -1,7 +1,7 @@
 {
  "meta": {
   "date_donnees": "2026-11-15T16:57:27+00:00",
-  "date_analyse": "2026-11-15T16:59:13+00:00",
+  "date_analyse": "2026-11-15T17:05:07+00:00",
   "canal": "API France Travail — Offres d'emploi v2",
   "requetes": [
    {
@@ -163,7 +163,115 @@
     "departement": "94",
     "n": 3
    }
-  ]
+  ],
+  "villes": [
+   {
+    "ville": "Paris",
+    "n": 18,
+    "pct": 19.4
+   },
+   {
+    "ville": "Lyon",
+    "n": 5,
+    "pct": 5.4
+   },
+   {
+    "ville": "Clermont-Ferrand",
+    "n": 2,
+    "pct": 2.2
+   },
+   {
+    "ville": "Marseille",
+    "n": 2,
+    "pct": 2.2
+   },
+   {
+    "ville": "Dijon",
+    "n": 1,
+    "pct": 1.1
+   },
+   {
+    "ville": "Lille",
+    "n": 1,
+    "pct": 1.1
+   },
+   {
+    "ville": "Montpellier",
+    "n": 1,
+    "pct": 1.1
+   },
+   {
+    "ville": "Rennes",
+    "n": 1,
+    "pct": 1.1
+   },
+   {
+    "ville": "Toulouse",
+    "n": 1,
+    "pct": 1.1
+   },
+   {
+    "ville": "Angers",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Bordeaux",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Grenoble",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Le Havre",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Nantes",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Nice",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Reims",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Rouen",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Saint-Étienne",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Strasbourg",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Toulon",
+    "n": 0,
+    "pct": 0.0
+   },
+   {
+    "ville": "Tours",
+    "n": 0,
+    "pct": 0.0
+   }
+  ],
+  "villes_total": 32
  },
  "teletravail": {
   "mentionne": 11,
@@ -652,12 +760,12 @@
   ],
   "api_competences": [
    {
-    "libelle": "Optimiser la visibilité des publications sur les réseaux sociaux",
+    "libelle": "Concevoir des supports de communication et d'image",
     "n": 9,
     "pct": 9.7
    },
    {
-    "libelle": "Concevoir des supports de communication et d'image",
+    "libelle": "Optimiser la visibilité des publications sur les réseaux sociaux",
     "n": 9,
     "pct": 9.7
    },
@@ -667,17 +775,17 @@
     "pct": 7.5
    },
    {
-    "libelle": "Savoir gérer plusieurs projets ou activités simultanément",
-    "n": 7,
-    "pct": 7.5
-   },
-   {
     "libelle": "Analyser les besoins des utilisateurs pour la création de contenus multimédias",
     "n": 7,
     "pct": 7.5
    },
    {
-    "libelle": "Marketing des réseaux sociaux",
+    "libelle": "Savoir gérer plusieurs projets ou activités simultanément",
+    "n": 7,
+    "pct": 7.5
+   },
+   {
+    "libelle": "Effectuer un reporting régulier à la hiérarchie",
     "n": 2,
     "pct": 2.2
    },
@@ -687,17 +795,17 @@
     "pct": 2.2
    },
    {
-    "libelle": "Effectuer un reporting régulier à la hiérarchie",
+    "libelle": "Marketing des réseaux sociaux",
     "n": 2,
     "pct": 2.2
    },
    {
-    "libelle": "- Organisation et coordination d'événements.",
+    "libelle": "Création de supports de communication graphique.",
     "n": 1,
     "pct": 1.1
    },
    {
-    "libelle": "Création de supports de communication graphique.",
+    "libelle": "- Organisation et coordination d'événements.",
     "n": 1,
     "pct": 1.1
    },
@@ -707,7 +815,7 @@
     "pct": 1.1
    },
    {
-    "libelle": "E-commerce",
+    "libelle": "Surveiller les stocks virtuels pour ajuster les offres",
     "n": 1,
     "pct": 1.1
    }
@@ -739,12 +847,12 @@
     "pct": 2.2
    },
    {
-    "libelle": "Faire preuve de leadership",
+    "libelle": "Etre ouvert aux changements",
     "n": 1,
     "pct": 1.1
    },
    {
-    "libelle": "Etre ouvert aux changements",
+    "libelle": "Faire preuve de leadership",
     "n": 1,
     "pct": 1.1
    },

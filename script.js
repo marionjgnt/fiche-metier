@@ -125,6 +125,13 @@ async function pageAccueil() {
   $("src-geo").textContent = srcLine(m);
   renderBars($("geo"), a.geographie.zones.map((z) => ({
     label: z.zone.replace(" (ou département non précisé)", ""), value: z.n, display: fmtPct(z.pct), small: `· ${z.n}` })));
+  // grandes villes
+  const gv = a.geographie.villes || [];
+  if (gv.length) {
+    $("src-villes").textContent = `${srcLine(m)}. Comptage par commune (Boulogne-Billancourt ou Villeurbanne ne comptent pas pour Paris ou Lyon). `
+      + `${fmt(a.geographie.villes_total)} offres sur ${fmt(n)} sont situées dans l'une de ces ${gv.length} villes.`;
+    renderBars($("villes"), gv.map((v) => ({ label: v.ville, value: v.n, display: String(v.n), small: v.n ? `· ${fmtPct(v.pct)}` : "" })));
+  } else $("villes").closest(".card").hidden = true;
   // contrats
   $("src-contrats").textContent = `${srcLine(m)}. Catégorie déduite du type de contrat, de la nature du contrat et de l'intitulé (alternance, stage).`;
   renderBars($("contrats"), a.contrats.map((x) => ({ label: x.contrat, value: x.n, display: fmtPct(x.pct), small: `· ${x.n}` })), { cls: "alt" });
@@ -292,6 +299,8 @@ async function pageOffres() {
 
   const contrats = [...new Set(offres.map((o) => o.contrat))].sort();
   const zones = [...new Set(offres.map((o) => o.zone))];
+  const villes = [...new Set(offres.map((o) => o.ville).filter(Boolean))].sort((x, y) => x.localeCompare(y, "fr"));
+  if ($("f-ville")) villes.forEach((v) => $("f-ville").append(el("option", { value: v, text: v })));
   contrats.forEach((c) => $("f-contrat").append(el("option", { value: c, text: c })));
   zones.forEach((z) => $("f-zone").append(el("option", { value: z, text: z.replace(" (ou département non précisé)", "") })));
 
@@ -299,7 +308,8 @@ async function pageOffres() {
   const fold = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const rendre = () => {
     const q = fold($("q").value), c = $("f-contrat").value, z = $("f-zone").value, tt = $("f-tt").checked;
-    const ok = offres.filter((o) => (!c || o.contrat === c) && (!z || o.zone === z) && (!tt || o.teletravail !== "non")
+    const v = $("f-ville") ? $("f-ville").value : "";
+    const ok = offres.filter((o) => (!c || o.contrat === c) && (!z || o.zone === z) && (!v || o.ville === v) && (!tt || o.teletravail !== "non")
       && (!q || fold(`${o.intitule} ${o.entreprise} ${o.lieu}`).includes(q)));
     $("count").textContent = `${fmt(ok.length)} offre(s) sur ${fmt(offres.length)}`;
     $("vide").hidden = ok.length > 0;
@@ -319,7 +329,7 @@ async function pageOffres() {
       liste.append(el("div", { style: "text-align:center" }, more));
     }
   };
-  ["q", "f-contrat", "f-zone", "f-tt"].forEach((id) => $(id).addEventListener("input", () => { limite = 40; rendre(); }));
+  ["q", "f-contrat", "f-zone", "f-ville", "f-tt"].filter((id) => $(id)).forEach((id) => $(id).addEventListener("input", () => { limite = 40; rendre(); }));
   rendre();
 }
 
