@@ -1,42 +1,42 @@
 date_releve,terme,categorie,nombre_offres,part_des_offres_pct,vu_en_formation
-2026-11-15,Réseaux sociaux,Réseaux sociaux et contenu,54,58.1,non
-2026-11-15,Reporting / KPI,Compétences métier,53,57.0,non
-2026-11-15,SEO / référencement naturel,"Site, e-commerce et SEO",49,52.7,non
-2026-11-15,Création de contenu / rédaction,Réseaux sociaux et contenu,48,51.6,non
-2026-11-15,Acquisition / génération de leads,Acquisition et publicité,46,49.5,non
-2026-11-15,Études de marché / veille,Compétences métier,45,48.4,non
-2026-11-15,Emailing / newsletters,"CRM, emailing et automation",42,45.2,non
-2026-11-15,Fidélisation / marketing client,"CRM, emailing et automation",40,43.0,non
-2026-11-15,Vidéo / montage,Réseaux sociaux et contenu,39,41.9,non
-2026-11-15,IA / IA générative,IA et automatisation,35,37.6,oui
-2026-11-15,Gestion de projet / coordination,Compétences métier,34,36.6,non
-2026-11-15,"Excel (TCD, analyse)",Data et mesure,32,34.4,non
-2026-11-15,Événementiel / salons,Compétences métier,31,33.3,non
-2026-11-15,Google Ads / SEA,Acquisition et publicité,30,32.3,non
-2026-11-15,Plan marketing / stratégie,Compétences métier,30,32.3,non
-2026-11-15,Relation agences / prestataires,Compétences métier,28,30.1,non
-2026-11-15,WordPress / CMS,"Site, e-commerce et SEO",28,30.1,non
-2026-11-15,"CRM (HubSpot, Salesforce…)","CRM, emailing et automation",27,29.0,non
-2026-11-15,Trade marketing / animation commerciale,Compétences métier,25,26.9,non
-2026-11-15,ROI / budget / ROAS,Data et mesure,25,26.9,non
-2026-11-15,Google Analytics / GA4,Data et mesure,24,25.8,non
-2026-11-15,Shopify / PrestaShop / e-commerce,"Site, e-commerce et SEO",22,23.7,non
-2026-11-15,Anglais,Compétences métier,22,23.7,non
-2026-11-15,UX / ergonomie web,"Site, e-commerce et SEO",20,21.5,non
-2026-11-15,Marketing automation,"CRM, emailing et automation",17,18.3,non
-2026-11-15,A/B test / optimisation de la conversion,Data et mesure,17,18.3,non
-2026-11-15,Looker Studio / Power BI / dashboards,Data et mesure,17,18.3,non
-2026-11-15,"Meta Ads (Facebook, Instagram)",Acquisition et publicité,15,16.1,non
-2026-11-15,"Suite Adobe (Photoshop, InDesign…)",Réseaux sociaux et contenu,13,14.0,non
-2026-11-15,Print / PLV / supports,Compétences métier,13,14.0,non
-2026-11-15,Marque / branding,Compétences métier,12,12.9,non
-2026-11-15,Canva,Réseaux sociaux et contenu,11,11.8,oui
-2026-11-15,Influence / UGC,Réseaux sociaux et contenu,8,8.6,non
-2026-11-15,Google Tag Manager / tracking,Data et mesure,8,8.6,non
-2026-11-15,ChatGPT et outils d'IA,IA et automatisation,7,7.5,oui
-2026-11-15,Affiliation / partenariats,Acquisition et publicité,6,6.5,non
-2026-11-15,LinkedIn Ads / TikTok Ads,Acquisition et publicité,5,5.4,non
-2026-11-15,HTML / CSS,"Site, e-commerce et SEO",5,5.4,non
-2026-11-15,SMS / notifications,"CRM, emailing et automation",4,4.3,non
-2026-11-15,Display / programmatique / retargeting,Acquisition et publicité,3,3.2,non
-2026-11-15,Automatisation / no-code,IA et automatisation,1,1.1,non
+2026-11-15,Reporting / KPI,Compétences métier,62,56.4,non
+2026-11-15,Réseaux sociaux,Réseaux sociaux et contenu,61,55.5,non
+2026-11-15,SEO / référencement naturel,"Site, e-commerce et SEO",53,48.2,non
+2026-11-15,Création de contenu / rédaction,Réseaux sociaux et contenu,53,48.2,non
+2026-11-15,Acquisition / génération de leads,Acquisition et publicité,52,47.3,non
+2026-11-15,Études de marché / veille,Compétences métier,50,45.5,non
+2026-11-15,Fidélisation / marketing client,"CRM, emailing et automation",47,42.7,non
+2026-11-15,Gestion de projet / coordination,Compétences métier,46,41.8,non
+2026-11-15,Vidéo / montage,Réseaux sociaux et contenu,46,41.8,non
+2026-11-15,Emailing / newsletters,"CRM, emailing et automation",46,41.8,non
+2026-11-15,Événementiel / salons,Compétences métier,41,37.3,non
+2026-11-15,IA / IA générative,IA et automatisation,37,33.6,oui
+2026-11-15,"Excel (TCD, analyse)",Data et mesure,37,33.6,non
+2026-11-15,Relation agences / prestataires,Compétences métier,36,32.7,non
+2026-11-15,Plan marketing / stratégie,Compétences métier,36,32.7,non
+2026-11-15,Trade marketing / animation commerciale,Compétences métier,32,29.1,non
+2026-11-15,"CRM (HubSpot, Salesforce…)","CRM, emailing et automation",32,29.1,non
+2026-11-15,Google Ads / SEA,Acquisition et publicité,31,28.2,non
+2026-11-15,ROI / budget / ROAS,Data et mesure,30,27.3,non
+2026-11-15,WordPress / CMS,"Site, e-commerce et SEO",30,27.3,non
+2026-11-15,Google Analytics / GA4,Data et mesure,26,23.6,non
+2026-11-15,Anglais,Compétences métier,25,22.7,non
+2026-11-15,Shopify / PrestaShop / e-commerce,"Site, e-commerce et SEO",24,21.8,non
+2026-11-15,UX / ergonomie web,"Site, e-commerce et SEO",21,19.1,non
+2026-11-15,Looker Studio / Power BI / dashboards,Data et mesure,21,19.1,non
+2026-11-15,Marketing automation,"CRM, emailing et automation",19,17.3,non
+2026-11-15,A/B test / optimisation de la conversion,Data et mesure,18,16.4,non
+2026-11-15,"Suite Adobe (Photoshop, InDesign…)",Réseaux sociaux et contenu,18,16.4,non
+2026-11-15,Print / PLV / supports,Compétences métier,18,16.4,non
+2026-11-15,"Meta Ads (Facebook, Instagram)",Acquisition et publicité,15,13.6,non
+2026-11-15,Marque / branding,Compétences métier,13,11.8,non
+2026-11-15,Canva,Réseaux sociaux et contenu,13,11.8,oui
+2026-11-15,Influence / UGC,Réseaux sociaux et contenu,9,8.2,non
+2026-11-15,Google Tag Manager / tracking,Data et mesure,8,7.3,non
+2026-11-15,ChatGPT et outils d'IA,IA et automatisation,7,6.4,oui
+2026-11-15,Affiliation / partenariats,Acquisition et publicité,6,5.5,non
+2026-11-15,SMS / notifications,"CRM, emailing et automation",6,5.5,non
+2026-11-15,LinkedIn Ads / TikTok Ads,Acquisition et publicité,6,5.5,non
+2026-11-15,HTML / CSS,"Site, e-commerce et SEO",6,5.5,non
+2026-11-15,Display / programmatique / retargeting,Acquisition et publicité,3,2.7,non
+2026-11-15,Automatisation / no-code,IA et automatisation,1,0.9,non
