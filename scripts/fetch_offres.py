@@ -74,6 +74,15 @@ def fold(s: str) -> str:
     return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
 
+def signaler(message: str) -> None:
+    """Affiche une erreur lisible. Sur GitHub Actions, elle apparaît aussi en
+    « annotation » sur la page du run (et dans l'e-mail d'échec)."""
+    message = " ".join(str(message).split())[:600]
+    print(message, file=sys.stderr)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::error title=Collecte France Travail::{message}")
+
+
 def get_token(client_id: str, client_secret: str) -> str:
     """Jeton OAuth2 (client_credentials). Le scope doit se terminer par
     application_<client_id>, sinon l'API répond 400."""
@@ -89,7 +98,9 @@ def get_token(client_id: str, client_secret: str) -> str:
         timeout=30,
     )
     if not resp.ok:
-        print(f"Réponse de l'API ({resp.status_code}) : {resp.text}", file=sys.stderr)
+        signaler(f"Connexion à l'API refusée ({resp.status_code}) : {resp.text[:300]}. "
+                 "Vérifier l'identifiant et la clé (secrets GitHub) et que l'API « Offres d'emploi v2 » "
+                 "est bien ajoutée à l'application sur francetravail.io.")
     resp.raise_for_status()
     return resp.json()["access_token"]
 
@@ -108,7 +119,7 @@ def fetch_requete(token: str, params_requete: dict) -> tuple[list[dict], int | N
         if resp.status_code == 204:
             break
         if resp.status_code not in (200, 206):
-            print(f"Réponse de l'API ({resp.status_code}) : {resp.text[:300]}", file=sys.stderr)
+            signaler(f"Recherche refusée par l'API ({resp.status_code}, paramètres {params_requete}) : {resp.text[:300]}")
             resp.raise_for_status()
         # En-tête du type « Content-Range: offres 0-149/2345 » : total réel.
         m = re.search(r"/(\d+)\s*$", resp.headers.get("Content-Range", ""))
@@ -186,8 +197,10 @@ def main() -> None:
     client_id = os.environ.get("FRANCE_TRAVAIL_CLIENT_ID")
     client_secret = os.environ.get("FRANCE_TRAVAIL_CLIENT_SECRET")
     if not client_id or not client_secret:
-        print("Erreur : FRANCE_TRAVAIL_CLIENT_ID et FRANCE_TRAVAIL_CLIENT_SECRET "
-              "doivent être définis (.env en local, secrets GitHub en Action).", file=sys.stderr)
+        manquants = [n for n, v in (("FRANCE_TRAVAIL_CLIENT_ID", client_id),
+                                    ("FRANCE_TRAVAIL_CLIENT_SECRET", client_secret)) if not v]
+        signaler(f"Secret(s) manquant(s) ou vide(s) : {', '.join(manquants)}. Vérifier leur nom exact dans "
+                 "Settings > Secrets and variables > Actions.")
         sys.exit(1)
 
     print("Authentification auprès de l'API France Travail...")
@@ -202,7 +215,7 @@ def main() -> None:
         except Exception as err:  # noqa: BLE001
             if rq["obligatoire"]:
                 raise
-            print(f"  échec non bloquant : {err}", file=sys.stderr)
+            signaler(f"Requête « {rq['label']} » en échec (non bloquant) : {err}")
             bilan_requetes.append({"label": rq["label"], "params": rq["params"], "ok": False,
                                    "erreur": str(err)[:200], "recuperees": 0, "total_api": None})
             continue
