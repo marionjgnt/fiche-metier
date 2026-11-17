@@ -1,5 +1,5 @@
 {
- "date": "2026-11-15T16:58:16+00:00",
+ "date": "2026-11-17T14:04:53+00:00",
  "source": "API Recherche d'entreprises (data.gouv.fr) — base Sirene",
  "filtre": "département 63, établissements actifs, codes NAF 73.11Z, 70.21Z, 73.20Z, 47.91B",
  "exclus_opposition": 458,
@@ -1641,19 +1641,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": null,
    "date_creation": "2025-11-01"
-  },
-  {
-   "siren": "992859454",
-   "nom": "ANISSA AIBOUT (AIBOUT) (LILA&CO.)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "CLERMONT-FERRAND",
-   "code_postal": "63100",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": null,
-   "date_creation": "2025-10-18"
   },
   {
    "siren": "847723798",
@@ -3747,19 +3734,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2011-10-01"
-  },
-  {
-   "siren": "952858439",
-   "nom": "GEOFFREY ROUGIER",
-   "naf": "70.21Z",
-   "naf_libelle": "Conseil en relations publiques et communication",
-   "commune": "ISSOIRE",
-   "code_postal": "63500",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "2023-05-25"
   },
   {
    "siren": "132137001",
@@ -6050,6 +6024,19 @@
    "date_creation": "2021-07-12"
   },
   {
+   "siren": "521574384",
+   "nom": "MICHAEL REDONDAUD (MRED)",
+   "naf": "47.91B",
+   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
+   "commune": "CLERMONT-FERRAND",
+   "code_postal": "63100",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": "PME",
+   "date_creation": "2010-05-01"
+  },
+  {
    "siren": "833961683",
    "nom": "MICHEL ROCHE",
    "naf": "73.20Z",
@@ -6776,19 +6763,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2015-09-01"
-  },
-  {
-   "siren": "845394360",
-   "nom": "PIERRE ANDRAUD (LONEPINESTORE)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "CHAMALIERES",
-   "code_postal": "63400",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "2019-01-20"
   },
   {
    "siren": "518306063",
