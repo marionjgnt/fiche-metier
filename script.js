@@ -114,7 +114,7 @@ async function pageAccueil() {
   const rome = $("rome");
   const dd = (k, v) => rome.append(el("dt", { text: k }), el("dd", { text: v }));
   dd("Métier visé", m.metier || "Chargé(e) de marketing digital et opérationnel");
-  dd("Sélection", "offres dont l'intitulé contient « marketing digital » ou « marketing opérationnel » (ou web, e-marketing)");
+  dd("Sélection", "offres dont l'intitulé contient « marketing digital » ou « marketing opérationnel », ou un poste de chef(fe) de projet marketing ou de chef(fe) de produit");
   dd("Code ROME le plus fréquent", m.rome_libelle || "—");
   dd("Offres analysées", `${fmt(n)} (dont ${fmt(m.offres_avec_texte)} avec texte complet)`);
   dd("Période des offres", `${fmtDate(m.date_plus_ancienne)} → ${fmtDate(m.date_plus_recente)}`);

@@ -6,9 +6,11 @@ Récupère les offres d'emploi d'un métier via l'API France Travail
 Les métiers visés sont le marketing digital ET le marketing opérationnel. Pas de code ROME :
 on cherche par mots-clés, puis on ne garde que les offres dont l'INTITULÉ
 correspond au métier (filtre FILTRE_INTITULE ci-dessous).
-  1. mots-clés « marketing digital »       -> requête obligatoire
-  2. mots-clés « marketing operationnel »  -> requête complémentaire
-  3. mots-clés « webmarketing »            -> requête complémentaire
+  1. mots-clés « marketing digital »          -> requête obligatoire
+  2. mots-clés « marketing operationnel »     -> requête complémentaire
+  3. mots-clés « chef de projet marketing »   -> requête complémentaire
+     (« chef de projet » seul ramènerait surtout du BTP et de l'informatique)
+  4. mots-clés « chef de produit »            -> requête complémentaire
   Si une requête complémentaire échoue, la collecte continue (et l'échec est
   noté dans le fichier de sortie).
 
@@ -43,13 +45,17 @@ except ImportError:
 # --- Configuration du métier -------------------------------------------------
 # Mots-clés séparés par « ; ». Sans accents : l'API refuse certains caractères.
 MOTS_CLES = [m.strip() for m in os.environ.get(
-    "MOTS_CLES", "marketing digital;marketing operationnel;webmarketing").split(";") if m.strip()]
+    "MOTS_CLES", "marketing digital;marketing operationnel;chef de projet marketing;chef de produit").split(";") if m.strip()]
 # Seules les offres dont l'intitulé correspond à cette expression sont gardées
 # (comparaison sans accents ni majuscules). Les autres sont comptées puis écartées.
 FILTRE_INTITULE = re.compile(os.environ.get(
     "FILTRE_INTITULE",
-    r"marketing\W+(?:digital|web|online|en ligne|operationnel)|digital\W+marketing|web\W*marketing|e-?marketing"))
-REQUETE_LABEL = os.environ.get("REQUETE_LABEL", "chargé(e) de marketing digital et opérationnel")
+    r"marketing\W+(?:digital|web|online|en ligne|operationnel)|digital\W+marketing|web\W*marketing|e-?marketing"
+    # chef(fe) de projet : seulement s'il s'agit de marketing / digital / communication
+    r"|chef(?:fe)?\W+de\W+projets?\b.*\b(?:marketing|digital|communication|web|e-?commerce|acquisition|crm|evenementiel)"
+    # chef(fe) de produit : sauf les postes informatiques ou techniques
+    r"|chef(?:fe)?\W+de\W+produits?\b(?!.*\b(?:informatique|logiciel|it|technique|si|data|software)\b)"))
+REQUETE_LABEL = os.environ.get("REQUETE_LABEL", "marketing digital et opérationnel, chef(fe) de projet marketing, chef(fe) de produit")
 
 # L'API limite à 150 offres par appel et à 1 150 offres par requête.
 MAX_OFFRES = int(os.environ.get("MAX_OFFRES", "1150"))

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261118d">
+<link rel="stylesheet" href="style.css?v=20261118e">
 </head>
 <body>
 <div class="nav-wrap">
@@ -125,8 +125,8 @@
     </div>
     <div class="grid grid-3">
       <div class="card"><h3>1. Collecter</h3><p>L'API officielle <strong>France Travail « Offres d'emploi v2 »</strong> est interrogée par un script Python
-        (<code>scripts/fetch_offres.py</code>)  : trois requêtes par mots-clés (« marketing digital », « marketing operationnel », « webmarketing »), puis seules
-        les offres dont l'<strong>intitulé</strong> correspond au marketing digital ou opérationnel sont gardées.</p><div id="requetes"></div></div>
+        (<code>scripts/fetch_offres.py</code>)  : quatre requêtes par mots-clés (« marketing digital », « marketing operationnel », « chef de projet marketing », « chef de produit »), puis seules
+        les offres dont l'<strong>intitulé</strong> correspond au marketing digital ou opérationnel, à un poste de chef(fe) de projet marketing ou de chef(fe) de produit sont gardées.</p><div id="requetes"></div></div>
       <div class="card"><h3>2. Analyser</h3><p><code>scripts/analyse_offres.py</code> calcule volumes, salaires, outils et compétences. Aucun chiffre
         n'est écrit à la main. <code>scripts/fetch_entreprises.py</code> interroge l'API publique Recherche d'entreprises.</p></div>
       <div class="card"><h3>3. Automatiser</h3><p>Une <strong>GitHub Action</strong> relance tout chaque mardi et vendredi matin et enregistre les données datées dans le
@@ -145,6 +145,6 @@
     <span>Site statique · données : France Travail, Sirene (data.gouv.fr)</span>
   </div>
 </footer>
-<script src="script.js?v=20261118d"></script>
+<script src="script.js?v=20261118e"></script>
 </body>
 </html>
