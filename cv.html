@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon CV face aux offres — Marketing digital et opérationnel</title>
+<meta name="description" content="Comparez votre CV aux offres de marketing digital et opérationnel : score de correspondance, compétences présentes ou manquantes, conseils. Le CV reste sur votre ordinateur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261118">
+</head>
+<body>
+<div class="nav-wrap">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="brand-dot"></span>Marketing digital &amp; opérationnel, compté</a>
+    <div class="nav-links">
+      <a href="index.html">← Retour à l'analyse</a>
+      <a href="offres.html">Offres en direct</a>
+      <a href="cv.html" class="is-active">Mon CV</a>
+    </div>
+  </nav>
+</div>
+
+<header class="hero">
+  <div class="hero-inner" style="padding-bottom:4.5rem">
+    <p class="eyebrow">Assistant CV · analyse dans votre navigateur</p>
+    <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Mon CV <span>face aux offres</span></h1>
+    <p class="hero-lead">Déposez votre CV, choisissez une offre : le site compare vos compétences à ce que demandent
+      réellement les annonces, puis vous dit quoi ajouter ou mettre en avant.</p>
+    <div class="chips" id="hero-chips"><span class="chip">🔒 Votre CV ne quitte jamais votre ordinateur</span></div>
+  </div>
+  <div class="hero-wave"></div>
+</header>
+
+<main>
+  <section class="block" style="padding-top:2rem">
+    <div class="cv-grid">
+      <div class="card">
+        <h3>1. Votre CV</h3>
+        <label class="dropzone" id="dropzone" for="cv-fichier">
+          <input type="file" id="cv-fichier" accept=".pdf,.txt,application/pdf,text/plain" hidden>
+          <span class="dropzone-icone" aria-hidden="true">📄</span>
+          <span class="dropzone-titre">Glissez votre CV ici</span>
+          <span class="dropzone-sous">ou cliquez pour choisir un fichier PDF</span>
+        </label>
+        <p class="src" id="cv-etat" aria-live="polite"></p>
+        <details class="cv-coller">
+          <summary>Ou collez le texte de votre CV</summary>
+          <textarea id="cv-texte" rows="8" placeholder="Copiez-collez ici le contenu de votre CV (Word, Canva, LinkedIn…)"></textarea>
+        </details>
+      </div>
+      <div class="card">
+        <h3>2. Le poste visé</h3>
+        <div class="filters" id="cible-choix">
+          <button class="filter is-on" type="button" data-cible="toutes">Toutes les offres</button>
+          <button class="filter" type="button" data-cible="une">Une offre précise</button>
+        </div>
+        <div id="cible-une" hidden>
+          <input type="search" id="offre-recherche" class="cv-champ" placeholder="Rechercher une offre (intitulé, entreprise, ville…)" autocomplete="off">
+          <select id="offre-select" class="cv-champ" size="6" aria-label="Offre visée"></select>
+        </div>
+        <p class="src" id="cible-info"></p>
+        <button class="cv-bouton" type="button" id="analyser" disabled>Analyser mon CV</button>
+      </div>
+    </div>
+
+    <div id="resultat" hidden>
+      <div class="card cv-score-card">
+        <div class="cv-score" id="score-anneau" style="--p:0">
+          <span id="score-valeur">0 %</span>
+        </div>
+        <div>
+          <h3 id="score-titre">Correspondance</h3>
+          <p id="score-texte"></p>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:1rem">
+        <div class="card">
+          <h3>✅ Ce que votre CV montre déjà</h3>
+          <p class="src" id="src-presents"></p>
+          <div class="tags" id="presents"></div>
+        </div>
+        <div class="card">
+          <h3>❌ Ce qui manque</h3>
+          <p class="src" id="src-manquants"></p>
+          <div class="tags" id="manquants"></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h3>💡 Nos conseils, par ordre de priorité</h3>
+        <ol class="cv-conseils" id="conseils"></ol>
+      </div>
+
+      <p class="src" style="margin-top:1rem">Comment ça marche : le site cherche dans votre CV les mêmes mots-clés que dans les annonces
+        (outils, compétences, méthodes). Un mot absent de votre CV ne veut pas dire que vous ne savez pas le faire : c'est
+        justement ce qu'un recruteur, ou un logiciel de tri de CV, ne verra pas.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span>Fiche métier — Bac +5 · 2026-2027</span>
+    <span>Analyse locale : aucun CV n'est envoyé ni enregistré</span>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="script.js?v=20261118"></script>
+<script src="cv.js?v=20261118"></script>
+</body>
+</html>

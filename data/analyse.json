@@ -1,7 +1,7 @@
 {
  "meta": {
   "date_donnees": "2026-11-17T14:03:42+00:00",
-  "date_analyse": "2026-11-17T14:04:54+00:00",
+  "date_analyse": "2026-11-18T17:57:55+00:00",
   "canal": "API France Travail — Offres d'emploi v2",
   "requetes": [
    {
@@ -829,7 +829,7 @@
     "pct": 1.8
    },
    {
-    "libelle": "Mettre en oeuvre un plan marketing, une stratégie de marque et de communication",
+    "libelle": "Analyser les tendances de consommation des clients",
     "n": 1,
     "pct": 0.9
    }

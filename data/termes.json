@@ -1,0 +1,484 @@
+{
+ "termes": [
+  {
+   "terme": "Google Ads / SEA",
+   "categorie": "Acquisition et publicité",
+   "motifs": [
+    {
+     "re": "google ads|adwords",
+     "casse": false
+    },
+    {
+     "re": "\\bSEA\\b",
+     "casse": true
+    }
+   ],
+   "pct": 30.6
+  },
+  {
+   "terme": "Meta Ads (Facebook, Instagram)",
+   "categorie": "Acquisition et publicité",
+   "motifs": [
+    {
+     "re": "meta ads|facebook ads|instagram ads|ads manager|social ads|paid social",
+     "casse": false
+    }
+   ],
+   "pct": 14.4
+  },
+  {
+   "terme": "LinkedIn Ads / TikTok Ads",
+   "categorie": "Acquisition et publicité",
+   "motifs": [
+    {
+     "re": "linkedin ads|tiktok ads|snapchat ads|pinterest ads",
+     "casse": false
+    }
+   ],
+   "pct": 5.4
+  },
+  {
+   "terme": "Display / programmatique / retargeting",
+   "categorie": "Acquisition et publicité",
+   "motifs": [
+    {
+     "re": "display|programmatique|retargeting|remarketing|\\bdv360\\b",
+     "casse": false
+    }
+   ],
+   "pct": 4.5
+  },
+  {
+   "terme": "Affiliation / partenariats",
+   "categorie": "Acquisition et publicité",
+   "motifs": [
+    {
+     "re": "affiliation|affilie|marketplace|amazon",
+     "casse": false
+    }
+   ],
+   "pct": 5.4
+  },
+  {
+   "terme": "Acquisition / génération de leads",
+   "categorie": "Acquisition et publicité",
+   "motifs": [
+    {
+     "re": "acquisition|generation de leads?|lead gen|\\bleads?\\b|prospects?",
+     "casse": false
+    }
+   ],
+   "pct": 47.7
+  },
+  {
+   "terme": "Google Analytics / GA4",
+   "categorie": "Data et mesure",
+   "motifs": [
+    {
+     "re": "google analytics|\\bga4\\b|analytics",
+     "casse": false
+    }
+   ],
+   "pct": 26.1
+  },
+  {
+   "terme": "Google Tag Manager / tracking",
+   "categorie": "Data et mesure",
+   "motifs": [
+    {
+     "re": "tag manager|\\bgtm\\b|tracking|tag(?:ging|s)? de suivi|pixel",
+     "casse": false
+    }
+   ],
+   "pct": 8.1
+  },
+  {
+   "terme": "Looker Studio / Power BI / dashboards",
+   "categorie": "Data et mesure",
+   "motifs": [
+    {
+     "re": "looker|data studio|power ?bi|tableau software|dashboard|tableaux? de bord",
+     "casse": false
+    }
+   ],
+   "pct": 18.9
+  },
+  {
+   "terme": "Excel (TCD, analyse)",
+   "categorie": "Data et mesure",
+   "motifs": [
+    {
+     "re": "excel|tableaux? croises|\\btcd\\b",
+     "casse": false
+    }
+   ],
+   "pct": 32.4
+  },
+  {
+   "terme": "A/B test / optimisation de la conversion",
+   "categorie": "Data et mesure",
+   "motifs": [
+    {
+     "re": "a/b ?test|ab test|taux de conversion|\\bcro\\b|optimisation de la conversion|landing pages?",
+     "casse": false
+    }
+   ],
+   "pct": 17.1
+  },
+  {
+   "terme": "ROI / budget / ROAS",
+   "categorie": "Data et mesure",
+   "motifs": [
+    {
+     "re": "\\broi\\b|\\broas\\b|\\bcpa\\b|\\bcpc\\b|budget",
+     "casse": false
+    }
+   ],
+   "pct": 29.7
+  },
+  {
+   "terme": "CRM (HubSpot, Salesforce…)",
+   "categorie": "CRM, emailing et automation",
+   "motifs": [
+    {
+     "re": "hubspot|salesforce|\\bcrm\\b|dynamics|zoho|pipedrive",
+     "casse": false
+    }
+   ],
+   "pct": 27.9
+  },
+  {
+   "terme": "Emailing / newsletters",
+   "categorie": "CRM, emailing et automation",
+   "motifs": [
+    {
+     "re": "emailing|e-mailing|newsletter|mailchimp|brevo|sendinblue|klaviyo|campagnes? (?:d.)?e-?mails?",
+     "casse": false
+    }
+   ],
+   "pct": 45.9
+  },
+  {
+   "terme": "Marketing automation",
+   "categorie": "CRM, emailing et automation",
+   "motifs": [
+    {
+     "re": "marketing automation|automatisation marketing|scenarios? (?:d.)?e-?mail|workflows?|nurturing|plezi|marketo|pardot|selligent|actito|splio",
+     "casse": false
+    }
+   ],
+   "pct": 16.2
+  },
+  {
+   "terme": "Fidélisation / marketing client",
+   "categorie": "CRM, emailing et automation",
+   "motifs": [
+    {
+     "re": "fidelisation|fideliser|programme de fidelite|marketing client|relation client|\\bcrm\\b|retention|parcours client|segmentation",
+     "casse": false
+    }
+   ],
+   "pct": 41.4
+  },
+  {
+   "terme": "SMS / notifications",
+   "categorie": "CRM, emailing et automation",
+   "motifs": [
+    {
+     "re": "\\bsms\\b|notifications? push",
+     "casse": false
+    }
+   ],
+   "pct": 6.3
+  },
+  {
+   "terme": "SEO / référencement naturel",
+   "categorie": "Site, e-commerce et SEO",
+   "motifs": [
+    {
+     "re": "\\bSEO\\b",
+     "casse": true
+    },
+    {
+     "re": "referencement naturel|search console|semrush|ahrefs",
+     "casse": false
+    }
+   ],
+   "pct": 51.4
+  },
+  {
+   "terme": "WordPress / CMS",
+   "categorie": "Site, e-commerce et SEO",
+   "motifs": [
+    {
+     "re": "wordpress|\\bcms\\b|drupal|webflow|wix",
+     "casse": false
+    }
+   ],
+   "pct": 29.7
+  },
+  {
+   "terme": "Shopify / PrestaShop / e-commerce",
+   "categorie": "Site, e-commerce et SEO",
+   "motifs": [
+    {
+     "re": "shopify|prestashop|magento|woocommerce|e-?commerce|site marchand|boutique en ligne",
+     "casse": false
+    }
+   ],
+   "pct": 21.6
+  },
+  {
+   "terme": "UX / ergonomie web",
+   "categorie": "Site, e-commerce et SEO",
+   "motifs": [
+    {
+     "re": "\\bux\\b|\\bui\\b|ergonomi|experience utilisateur|parcours utilisateur",
+     "casse": false
+    }
+   ],
+   "pct": 18.9
+  },
+  {
+   "terme": "HTML / CSS",
+   "categorie": "Site, e-commerce et SEO",
+   "motifs": [
+    {
+     "re": "\\bhtml\\b|\\bcss\\b",
+     "casse": false
+    }
+   ],
+   "pct": 6.3
+  },
+  {
+   "terme": "GitHub / Git",
+   "categorie": "Site, e-commerce et SEO",
+   "motifs": [
+    {
+     "re": "github|\\bgit\\b",
+     "casse": false
+    }
+   ],
+   "pct": 0.0
+  },
+  {
+   "terme": "Réseaux sociaux",
+   "categorie": "Réseaux sociaux et contenu",
+   "motifs": [
+    {
+     "re": "reseaux sociaux|social media|instagram|facebook|linkedin|tiktok",
+     "casse": false
+    }
+   ],
+   "pct": 56.8
+  },
+  {
+   "terme": "Création de contenu / rédaction",
+   "categorie": "Réseaux sociaux et contenu",
+   "motifs": [
+    {
+     "re": "creation de contenu|redact|copywrit|contenus? (?:editorial|digital|web|marketing)|content marketing|storytelling",
+     "casse": false
+    }
+   ],
+   "pct": 50.5
+  },
+  {
+   "terme": "Canva",
+   "categorie": "Réseaux sociaux et contenu",
+   "motifs": [
+    {
+     "re": "canva",
+     "casse": false
+    }
+   ],
+   "pct": 12.6
+  },
+  {
+   "terme": "Suite Adobe (Photoshop, InDesign…)",
+   "categorie": "Réseaux sociaux et contenu",
+   "motifs": [
+    {
+     "re": "photoshop|illustrator|indesign|suite adobe|creative cloud|\\badobe\\b",
+     "casse": false
+    }
+   ],
+   "pct": 17.1
+  },
+  {
+   "terme": "Vidéo / montage",
+   "categorie": "Réseaux sociaux et contenu",
+   "motifs": [
+    {
+     "re": "montage|video|reels?\\b|motion design|capcut|premiere",
+     "casse": false
+    }
+   ],
+   "pct": 41.4
+  },
+  {
+   "terme": "Influence / UGC",
+   "categorie": "Réseaux sociaux et contenu",
+   "motifs": [
+    {
+     "re": "influen|\\bugc\\b|createurs? de contenu",
+     "casse": false
+    }
+   ],
+   "pct": 7.2
+  },
+  {
+   "terme": "IA / IA générative",
+   "categorie": "IA et automatisation",
+   "motifs": [
+    {
+     "re": "\\bIA\\b",
+     "casse": true
+    },
+    {
+     "re": "intelligence artificielle|ia generative|genai|generative ai",
+     "casse": false
+    }
+   ],
+   "pct": 32.4
+  },
+  {
+   "terme": "ChatGPT et outils d'IA",
+   "categorie": "IA et automatisation",
+   "motifs": [
+    {
+     "re": "chat ?gpt|openai|midjourney|copilot|gemini|mistral|claude\\b",
+     "casse": false
+    }
+   ],
+   "pct": 6.3
+  },
+  {
+   "terme": "Automatisation / no-code",
+   "categorie": "IA et automatisation",
+   "motifs": [
+    {
+     "re": "no-?code|low-?code|zapier|make\\.com|n8n",
+     "casse": false
+    }
+   ],
+   "pct": 0.9
+  },
+  {
+   "terme": "Événementiel / salons",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "evenement|salons?\\b|webinaires?|webinars?|seminaires?|soirees?",
+     "casse": false
+    }
+   ],
+   "pct": 39.6
+  },
+  {
+   "terme": "Print / PLV / supports",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "\\bplv\\b|print|brochures?|plaquettes?|flyers?|catalogues?|goodies",
+     "casse": false
+    }
+   ],
+   "pct": 17.1
+  },
+  {
+   "terme": "Trade marketing / animation commerciale",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "trade marketing|animation commerciale|operations? commerciales?|promotion|merchandising",
+     "casse": false
+    }
+   ],
+   "pct": 28.8
+  },
+  {
+   "terme": "Plan marketing / stratégie",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "plan (?:marketing|d.actions?|de communication)|strategie (?:marketing|digitale?|d.acquisition|de communication)",
+     "casse": false
+    }
+   ],
+   "pct": 35.1
+  },
+  {
+   "terme": "Études de marché / veille",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "etudes? de marche|\\bveille\\b|benchmark|analyse concurrentielle",
+     "casse": false
+    }
+   ],
+   "pct": 44.1
+  },
+  {
+   "terme": "Reporting / KPI",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "reporting|\\bkpi|indicateurs?|analyse des performances|statistiques",
+     "casse": false
+    }
+   ],
+   "pct": 55.9
+  },
+  {
+   "terme": "Gestion de projet / coordination",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "gestion de projet|project management|coordination|coordonner|retroplanning",
+     "casse": false
+    }
+   ],
+   "pct": 38.7
+  },
+  {
+   "terme": "Relation agences / prestataires",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "agences?|prestataires?|freelances?|fournisseurs?",
+     "casse": false
+    }
+   ],
+   "pct": 34.2
+  },
+  {
+   "terme": "Marque / branding",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "branding|image de marque|notoriete|identite de marque|plateforme de marque",
+     "casse": false
+    }
+   ],
+   "pct": 11.7
+  },
+  {
+   "terme": "Anglais",
+   "categorie": "Compétences métier",
+   "motifs": [
+    {
+     "re": "anglais|english|bilingue",
+     "casse": false
+    }
+   ],
+   "pct": 24.3
+  }
+ ],
+ "formation": [
+  "Canva",
+  "ChatGPT et outils d'IA",
+  "IA / IA générative",
+  "GitHub"
+ ]
+}

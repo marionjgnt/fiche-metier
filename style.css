@@ -193,3 +193,40 @@ footer { border-top: 1px solid var(--line); margin-top: 3rem; }
   .hero-inner { padding-top: 3rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .bar-fill { transition: none; } }
+
+/* ---------- page « Mon CV » ---------- */
+.cv-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.dropzone { display: grid; justify-items: center; gap: .3rem; text-align: center; cursor: pointer; padding: 1.8rem 1rem;
+  border: 2px dashed var(--line); border-radius: var(--radius); background: var(--soft); transition: border-color .2s, transform .2s; }
+.dropzone:hover, .dropzone.is-over { border-color: var(--brand); transform: translateY(-1px); }
+.dropzone.is-ok { border-style: solid; border-color: var(--teal); background: var(--teal-bg); }
+.dropzone-icone { font-size: 2rem; }
+.dropzone-titre { font-weight: 800; }
+.dropzone-sous { font-size: .85rem; color: var(--ink-soft); }
+.cv-coller { margin-top: .8rem; }
+.cv-coller summary { cursor: pointer; font-weight: 700; font-size: .9rem; color: var(--brand); }
+.cv-coller textarea, .cv-champ { font: inherit; width: 100%; margin-top: .6rem; padding: .7rem .9rem; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink); box-sizing: border-box; }
+.cv-champ option { padding: .35rem .2rem; }
+.cv-bouton { font: inherit; font-weight: 800; margin-top: 1rem; width: 100%; padding: .9rem 1rem; border: 0; border-radius: 14px;
+  cursor: pointer; color: #fff; background: var(--grad); box-shadow: var(--shadow); transition: opacity .2s, transform .2s; }
+.cv-bouton:hover:not(:disabled) { transform: translateY(-1px); }
+.cv-bouton:disabled { opacity: .45; cursor: not-allowed; }
+#resultat { margin-top: 1.4rem; }
+.cv-score-card { display: flex; align-items: center; gap: 1.6rem; }
+.cv-score { --p: 0; flex: none; width: 128px; height: 128px; border-radius: 50%; display: grid; place-items: center;
+  background: conic-gradient(var(--brand) calc(var(--p) * 1%), var(--line) 0); transition: --p .8s; }
+.cv-score span { width: 100px; height: 100px; border-radius: 50%; background: var(--card); display: grid; place-items: center;
+  font-size: 1.7rem; font-weight: 800; }
+.cv-score-card h3 { margin-top: 0; }
+.tag.manque { background: var(--warn-bg); color: var(--warn); }
+.tag.present { background: var(--teal-bg); color: var(--teal); }
+.cv-conseils { margin: 0; padding-left: 1.3rem; display: grid; gap: .8rem; }
+.cv-conseils li strong { display: block; }
+.cv-conseils .src { margin: .2rem 0 0; }
+@media (max-width: 760px) {
+  .cv-grid { grid-template-columns: 1fr; }
+  .cv-score-card { flex-direction: column; text-align: center; }
+}
+.offre-liens { display: grid; justify-items: end; gap: .3rem; }
+.offre-cv { color: var(--brand-2); }

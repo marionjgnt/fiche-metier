@@ -615,7 +615,16 @@ def main() -> None:
             "teletravail": teletravail(o), "date": o.get("date_publication"), "url": o.get("url"),
             "gps": list(gps[id(o)]) if id(o) in gps else None,
             "outils": sorted(t for t in presence[id(o)] if t in outils_seuls)[:6],
+            "termes": sorted(presence[id(o)]),  # pour la page « Mon CV »
         })
+    # Liste des compétences repérées, avec leurs expressions, pour la page « Mon CV »
+    # (la comparaison CV / offres se fait dans le navigateur, le CV n'est jamais envoyé).
+    (DATA / "termes.json").write_text(json.dumps({
+        "termes": [{"terme": nom, "categorie": cat,
+                    "motifs": [{"re": rx.pattern, "casse": cs} for rx, cs in pats],
+                    "pct": pct(compte.get(nom, 0), n)} for nom, cat, pats in TERMES],
+        "formation": formation.get("termes_vus_en_formation", []),
+    }, ensure_ascii=False, indent=1), encoding="utf-8")
     F_OFFRES_SITE.write_text(json.dumps({"date_donnees": maj, "offres": liste}, ensure_ascii=False,
                                         separators=(",", ":")), encoding="utf-8")
 

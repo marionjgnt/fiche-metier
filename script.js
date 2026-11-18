@@ -327,7 +327,9 @@ async function pageOffres() {
     clear(liste);
     ok.slice(0, limite).forEach((o) => liste.append(el("article", { class: "offre" },
       el("div", { class: "offre-head" }, el("div", {}, el("h3", { text: o.intitule }), el("div", { class: "offre-co", text: `${o.entreprise} · ${o.lieu || "lieu non précisé"}` })),
-        o.url ? el("a", { class: "offre-link", href: o.url, target: "_blank", rel: "noopener", text: "Voir l'offre →" }) : null),
+        el("div", { class: "offre-liens" },
+          o.url ? el("a", { class: "offre-link", href: o.url, target: "_blank", rel: "noopener", text: "Voir l'offre →" }) : null,
+          el("a", { class: "offre-link offre-cv", href: `cv.html?offre=${encodeURIComponent(o.id)}`, text: "Comparer mon CV" }))),
       el("div", { class: "offre-meta" },
         el("span", { class: "badge", text: o.contrat }),
         o.salaire && o.salaire_mensuel ? el("span", { class: "badge ok", text: `${eur(o.salaire_mensuel[0])}${o.salaire_mensuel[1] !== o.salaire_mensuel[0] ? ` – ${eur(o.salaire_mensuel[1])}` : ""} / mois` }) : null,
