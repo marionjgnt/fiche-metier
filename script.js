@@ -266,11 +266,13 @@ async function pageAccueil() {
   // plan et position
   const plan = (c && c.plan || []).filter((p) => p.action && p.action.trim());
   const pl = $("plan-liste");
-  if (plan.length) plan.forEach((p) => pl.append(el("li", {}, el("div", { class: "when", text: p.date }), el("strong", { text: p.action }),
+  if (!pl) {} // section retirée de la page
+  else if (plan.length) plan.forEach((p) => pl.append(el("li", {}, el("div", { class: "when", text: p.date }), el("strong", { text: p.action }),
     p.preuve ? el("div", { class: "proof", text: `Preuve attendue : ${p.preuve}` }) : null)));
   else pl.append(el("li", {}, todo("À compléter", "trois actions datées, dont une qui produit une preuve (data/contenu.json).")));
   const pos = c && c.position, ps = $("position");
-  if (pos && pos.conclusion && pos.conclusion.trim()) {
+  if (!ps) {} // section retirée de la page
+  else if (pos && pos.conclusion && pos.conclusion.trim()) {
     ps.append(el("div", { class: "position" }, el("h3", { text: "Ce que je conclus sur le métier" }), el("p", { text: pos.conclusion }),
       pos.ce_que_je_cherche ? [el("h3", { text: "Ce que je vais chercher" }), el("p", { text: pos.ce_que_je_cherche })] : null));
   } else ps.append(todo("À compléter", "votre position : ce que vous concluez sur le métier et ce que vous allez chercher cette année (data/contenu.json)."));
