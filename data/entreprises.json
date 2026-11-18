@@ -1,8 +1,8 @@
 {
- "date": "2026-11-17T14:04:53+00:00",
+ "date": "2026-11-18T21:05:06+00:00",
  "source": "API Recherche d'entreprises (data.gouv.fr) — base Sirene",
  "filtre": "département 63, établissements actifs, codes NAF 73.11Z, 70.21Z, 73.20Z, 47.91B",
- "exclus_opposition": 458,
+ "exclus_opposition": 459,
  "entreprises": [
   {
    "siren": "378709182",
@@ -6024,19 +6024,6 @@
    "date_creation": "2021-07-12"
   },
   {
-   "siren": "521574384",
-   "nom": "MICHAEL REDONDAUD (MRED)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "CLERMONT-FERRAND",
-   "code_postal": "63100",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "2010-05-01"
-  },
-  {
    "siren": "833961683",
    "nom": "MICHEL ROCHE",
    "naf": "73.20Z",
@@ -6763,6 +6750,19 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2015-09-01"
+  },
+  {
+   "siren": "845394360",
+   "nom": "PIERRE ANDRAUD (LONEPINESTORE)",
+   "naf": "47.91B",
+   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
+   "commune": "CHAMALIERES",
+   "code_postal": "63400",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": "PME",
+   "date_creation": "2019-01-20"
   },
   {
    "siren": "518306063",

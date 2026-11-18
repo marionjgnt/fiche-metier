@@ -95,6 +95,53 @@
     "LinkedIn Ads / TikTok Ads": 6
    },
    "avec_texte": 111
+  },
+  {
+   "date": "2026-11-18",
+   "nombre_offres": 133,
+   "termes": {
+    "Shopify / PrestaShop / e-commerce": 19,
+    "UX / ergonomie web": 21,
+    "Reporting / KPI": 68,
+    "Excel (TCD, analyse)": 48,
+    "A/B test / optimisation de la conversion": 19,
+    "Fidélisation / marketing client": 49,
+    "WordPress / CMS": 25,
+    "Études de marché / veille": 62,
+    "Trade marketing / animation commerciale": 44,
+    "Gestion de projet / coordination": 70,
+    "Acquisition / génération de leads": 57,
+    "Création de contenu / rédaction": 53,
+    "Relation agences / prestataires": 57,
+    "SEO / référencement naturel": 48,
+    "Google Analytics / GA4": 28,
+    "CRM (HubSpot, Salesforce…)": 34,
+    "ROI / budget / ROAS": 44,
+    "IA / IA générative": 33,
+    "Événementiel / salons": 49,
+    "Vidéo / montage": 54,
+    "Display / programmatique / retargeting": 6,
+    "Réseaux sociaux": 63,
+    "Suite Adobe (Photoshop, InDesign…)": 19,
+    "Canva": 14,
+    "Meta Ads (Facebook, Instagram)": 16,
+    "Google Ads / SEA": 32,
+    "Anglais": 34,
+    "Plan marketing / stratégie": 45,
+    "Looker Studio / Power BI / dashboards": 24,
+    "Emailing / newsletters": 46,
+    "Print / PLV / supports": 22,
+    "Affiliation / partenariats": 6,
+    "SMS / notifications": 6,
+    "Marque / branding": 16,
+    "Influence / UGC": 8,
+    "Google Tag Manager / tracking": 9,
+    "Marketing automation": 18,
+    "ChatGPT et outils d'IA": 6,
+    "LinkedIn Ads / TikTok Ads": 3,
+    "HTML / CSS": 4
+   },
+   "avec_texte": 133
   }
  ]
 }

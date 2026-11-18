@@ -13,7 +13,7 @@
      "casse": true
     }
    ],
-   "pct": 30.6
+   "pct": 24.1
   },
   {
    "terme": "Meta Ads (Facebook, Instagram)",
@@ -24,7 +24,7 @@
      "casse": false
     }
    ],
-   "pct": 14.4
+   "pct": 12.0
   },
   {
    "terme": "LinkedIn Ads / TikTok Ads",
@@ -35,7 +35,7 @@
      "casse": false
     }
    ],
-   "pct": 5.4
+   "pct": 2.3
   },
   {
    "terme": "Display / programmatique / retargeting",
@@ -57,7 +57,7 @@
      "casse": false
     }
    ],
-   "pct": 5.4
+   "pct": 4.5
   },
   {
    "terme": "Acquisition / génération de leads",
@@ -68,7 +68,7 @@
      "casse": false
     }
    ],
-   "pct": 47.7
+   "pct": 42.9
   },
   {
    "terme": "Google Analytics / GA4",
@@ -79,7 +79,7 @@
      "casse": false
     }
    ],
-   "pct": 26.1
+   "pct": 21.1
   },
   {
    "terme": "Google Tag Manager / tracking",
@@ -90,7 +90,7 @@
      "casse": false
     }
    ],
-   "pct": 8.1
+   "pct": 6.8
   },
   {
    "terme": "Looker Studio / Power BI / dashboards",
@@ -101,7 +101,7 @@
      "casse": false
     }
    ],
-   "pct": 18.9
+   "pct": 18.0
   },
   {
    "terme": "Excel (TCD, analyse)",
@@ -112,7 +112,7 @@
      "casse": false
     }
    ],
-   "pct": 32.4
+   "pct": 36.1
   },
   {
    "terme": "A/B test / optimisation de la conversion",
@@ -123,7 +123,7 @@
      "casse": false
     }
    ],
-   "pct": 17.1
+   "pct": 14.3
   },
   {
    "terme": "ROI / budget / ROAS",
@@ -134,7 +134,7 @@
      "casse": false
     }
    ],
-   "pct": 29.7
+   "pct": 33.1
   },
   {
    "terme": "CRM (HubSpot, Salesforce…)",
@@ -145,7 +145,7 @@
      "casse": false
     }
    ],
-   "pct": 27.9
+   "pct": 25.6
   },
   {
    "terme": "Emailing / newsletters",
@@ -156,7 +156,7 @@
      "casse": false
     }
    ],
-   "pct": 45.9
+   "pct": 34.6
   },
   {
    "terme": "Marketing automation",
@@ -167,7 +167,7 @@
      "casse": false
     }
    ],
-   "pct": 16.2
+   "pct": 13.5
   },
   {
    "terme": "Fidélisation / marketing client",
@@ -178,7 +178,7 @@
      "casse": false
     }
    ],
-   "pct": 41.4
+   "pct": 36.8
   },
   {
    "terme": "SMS / notifications",
@@ -189,7 +189,7 @@
      "casse": false
     }
    ],
-   "pct": 6.3
+   "pct": 4.5
   },
   {
    "terme": "SEO / référencement naturel",
@@ -204,7 +204,7 @@
      "casse": false
     }
    ],
-   "pct": 51.4
+   "pct": 36.1
   },
   {
    "terme": "WordPress / CMS",
@@ -215,7 +215,7 @@
      "casse": false
     }
    ],
-   "pct": 29.7
+   "pct": 18.8
   },
   {
    "terme": "Shopify / PrestaShop / e-commerce",
@@ -226,7 +226,7 @@
      "casse": false
     }
    ],
-   "pct": 21.6
+   "pct": 14.3
   },
   {
    "terme": "UX / ergonomie web",
@@ -237,7 +237,7 @@
      "casse": false
     }
    ],
-   "pct": 18.9
+   "pct": 15.8
   },
   {
    "terme": "HTML / CSS",
@@ -248,7 +248,7 @@
      "casse": false
     }
    ],
-   "pct": 6.3
+   "pct": 3.0
   },
   {
    "terme": "GitHub / Git",
@@ -270,7 +270,7 @@
      "casse": false
     }
    ],
-   "pct": 56.8
+   "pct": 47.4
   },
   {
    "terme": "Création de contenu / rédaction",
@@ -281,7 +281,7 @@
      "casse": false
     }
    ],
-   "pct": 50.5
+   "pct": 39.8
   },
   {
    "terme": "Canva",
@@ -292,7 +292,7 @@
      "casse": false
     }
    ],
-   "pct": 12.6
+   "pct": 10.5
   },
   {
    "terme": "Suite Adobe (Photoshop, InDesign…)",
@@ -303,7 +303,7 @@
      "casse": false
     }
    ],
-   "pct": 17.1
+   "pct": 14.3
   },
   {
    "terme": "Vidéo / montage",
@@ -314,7 +314,7 @@
      "casse": false
     }
    ],
-   "pct": 41.4
+   "pct": 40.6
   },
   {
    "terme": "Influence / UGC",
@@ -325,7 +325,7 @@
      "casse": false
     }
    ],
-   "pct": 7.2
+   "pct": 6.0
   },
   {
    "terme": "IA / IA générative",
@@ -340,7 +340,7 @@
      "casse": false
     }
    ],
-   "pct": 32.4
+   "pct": 24.8
   },
   {
    "terme": "ChatGPT et outils d'IA",
@@ -351,7 +351,7 @@
      "casse": false
     }
    ],
-   "pct": 6.3
+   "pct": 4.5
   },
   {
    "terme": "Automatisation / no-code",
@@ -362,7 +362,7 @@
      "casse": false
     }
    ],
-   "pct": 0.9
+   "pct": 0.0
   },
   {
    "terme": "Événementiel / salons",
@@ -373,7 +373,7 @@
      "casse": false
     }
    ],
-   "pct": 39.6
+   "pct": 36.8
   },
   {
    "terme": "Print / PLV / supports",
@@ -384,7 +384,7 @@
      "casse": false
     }
    ],
-   "pct": 17.1
+   "pct": 16.5
   },
   {
    "terme": "Trade marketing / animation commerciale",
@@ -395,7 +395,7 @@
      "casse": false
     }
    ],
-   "pct": 28.8
+   "pct": 33.1
   },
   {
    "terme": "Plan marketing / stratégie",
@@ -406,7 +406,7 @@
      "casse": false
     }
    ],
-   "pct": 35.1
+   "pct": 33.8
   },
   {
    "terme": "Études de marché / veille",
@@ -417,7 +417,7 @@
      "casse": false
     }
    ],
-   "pct": 44.1
+   "pct": 46.6
   },
   {
    "terme": "Reporting / KPI",
@@ -428,7 +428,7 @@
      "casse": false
     }
    ],
-   "pct": 55.9
+   "pct": 51.1
   },
   {
    "terme": "Gestion de projet / coordination",
@@ -439,7 +439,7 @@
      "casse": false
     }
    ],
-   "pct": 38.7
+   "pct": 52.6
   },
   {
    "terme": "Relation agences / prestataires",
@@ -450,7 +450,7 @@
      "casse": false
     }
    ],
-   "pct": 34.2
+   "pct": 42.9
   },
   {
    "terme": "Marque / branding",
@@ -461,7 +461,7 @@
      "casse": false
     }
    ],
-   "pct": 11.7
+   "pct": 12.0
   },
   {
    "terme": "Anglais",
@@ -472,7 +472,7 @@
      "casse": false
     }
    ],
-   "pct": 24.3
+   "pct": 25.6
   }
  ],
  "formation": [
