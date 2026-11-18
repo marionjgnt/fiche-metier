@@ -541,7 +541,7 @@ def main() -> None:
         f"Photographie du {date_maj.strftime('%d/%m/%Y')} : seules les offres déposées à France Travail (et ses partenaires) "
         "et encore ouvertes sont visibles. Ce n'est ni le total annuel ni l'ensemble du marché : beaucoup de "
         "recrutements ne passent jamais par une annonce.",
-        f"Seules les offres dont l'intitulé parle de marketing digital ou opérationnel (ou numérique, web, e-marketing) sont gardées : "
+        f"Seules les offres dont l'intitulé parle de marketing digital ou opérationnel (ou web, e-marketing) sont gardées : "
         f"{src.get('offres_ecartees_intitule') or 0} offres remontées par les mots-clés mais portant un autre intitulé "
         "ont été écartées. Le niveau de poste varie (assistant, chargé, responsable) : voir les intitulés en section 1.",
         f"Le salaire n'est affiché que dans {pct(n_sal, n)} % des offres ; les moyennes ne reflètent que les employeurs "

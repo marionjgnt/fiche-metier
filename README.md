@@ -10,8 +10,8 @@ publiées sur France Travail, et qui se met à jour seul chaque mardi et vendred
 ## Le métier ciblé
 
 - **Intitulé :** Chargé(e) de marketing digital et opérationnel (marketing de performance, marketing client, événementiel)
-- **Requêtes :** mots-clés « marketing digital », « marketing operationnel », « marketing numerique », « webmarketing » (pas de code ROME)
-- **Sélection :** seules les offres dont l'intitulé contient « marketing digital » ou « marketing opérationnel » (ou numérique, web,
+- **Requêtes :** mots-clés « marketing digital », « marketing operationnel », « webmarketing » (pas de code ROME)
+- **Sélection :** seules les offres dont l'intitulé contient « marketing digital » ou « marketing opérationnel » (ou web,
   e-marketing, digital marketing) sont gardées ; les autres sont comptées puis écartées.
 
 ## Ce qui a changé par rapport au projet d'origine
@@ -19,7 +19,7 @@ publiées sur France Travail, et qui se met à jour seul chaque mardi et vendred
 | Élément | Projet d'origine | Cette version |
 |---|---|---|
 | Sélection | code ROME E1101 + mots-clés | mots-clés + filtre sur l'intitulé (pas de code ROME) |
-| Mots-clés | « community manager » | « marketing digital », « marketing operationnel », « marketing numerique », « webmarketing » |
+| Mots-clés | « community manager » | « marketing digital », « marketing operationnel », « webmarketing » |
 | Outils et compétences repérés | réseaux sociaux, création visuelle… | acquisition (Google Ads, Meta Ads), data (GA4, Looker Studio), CRM et automation, SEO et e-commerce, événementiel, print… |
 | Marché caché (63) | agences de pub, régie, conseil en communication | agences de pub, conseil en communication, études de marché, e-commerce |
 | Repère salaire MétierScope | fiche Community manager | à renseigner (voir `scripts/analyse_offres.py`) |

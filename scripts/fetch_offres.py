@@ -8,8 +8,7 @@ on cherche par mots-clés, puis on ne garde que les offres dont l'INTITULÉ
 correspond au métier (filtre FILTRE_INTITULE ci-dessous).
   1. mots-clés « marketing digital »       -> requête obligatoire
   2. mots-clés « marketing operationnel »  -> requête complémentaire
-  3. mots-clés « marketing numerique »     -> requête complémentaire
-  4. mots-clés « webmarketing »            -> requête complémentaire
+  3. mots-clés « webmarketing »            -> requête complémentaire
   Si une requête complémentaire échoue, la collecte continue (et l'échec est
   noté dans le fichier de sortie).
 
@@ -44,12 +43,12 @@ except ImportError:
 # --- Configuration du métier -------------------------------------------------
 # Mots-clés séparés par « ; ». Sans accents : l'API refuse certains caractères.
 MOTS_CLES = [m.strip() for m in os.environ.get(
-    "MOTS_CLES", "marketing digital;marketing operationnel;marketing numerique;webmarketing").split(";") if m.strip()]
+    "MOTS_CLES", "marketing digital;marketing operationnel;webmarketing").split(";") if m.strip()]
 # Seules les offres dont l'intitulé correspond à cette expression sont gardées
 # (comparaison sans accents ni majuscules). Les autres sont comptées puis écartées.
 FILTRE_INTITULE = re.compile(os.environ.get(
     "FILTRE_INTITULE",
-    r"marketing\W+(?:digital|numerique|web|online|en ligne|operationnel)|digital\W+marketing|web\W*marketing|e-?marketing"))
+    r"marketing\W+(?:digital|web|online|en ligne|operationnel)|digital\W+marketing|web\W*marketing|e-?marketing"))
 REQUETE_LABEL = os.environ.get("REQUETE_LABEL", "chargé(e) de marketing digital et opérationnel")
 
 # L'API limite à 150 offres par appel et à 1 150 offres par requête.

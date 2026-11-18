@@ -146,7 +146,7 @@
     const chiffres = (texte.match(/\d+(?:[.,\s]\d{3})*(?:[.,]\d+)?\s?(?:%|€|euros?|k€|K€|k\b|x\b|abonnés|followers|leads|clients|participants|personnes|visiteurs|vues)/gi) || []).length;
     if (chiffres < 3) liste.push({ titre: "Chiffrez vos résultats",
       texte: `Votre CV contient ${chiffres} résultat(s) chiffré(s). Les recruteurs en marketing attendent des preuves : « +25 % d'ouverture », « 300 participants », « budget de 2 000 € ».` });
-    if (!/marketing (digital|operationnel|numerique)|digital marketing|webmarketing/.test(plie))
+    if (!/marketing (digital|operationnel)|digital marketing|webmarketing/.test(plie))
       liste.push({ titre: "Affichez le bon intitulé en haut du CV",
         texte: `Écrivez sous votre nom le poste visé${offre ? ` (par exemple « ${offre.intitule.replace(/\s*\(.*?\)\s*/g, " ").trim()} »)` : " : « Chargée de marketing digital et opérationnel »"}. Les logiciels de tri et les recruteurs cherchent d'abord ce titre.` });
     if (offre && offre.contrat === "Alternance" && !/alternance|apprenti/.test(plie))
