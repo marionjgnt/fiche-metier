@@ -191,14 +191,18 @@
     $("src-top").textContent = `Calcul : part des compétences demandées dans chaque offre que l'on retrouve dans votre CV (${fmt(offres.length)} offres comparées).`;
     clear($("top-offres"));
     classement.forEach(({ o, faits, total, pct }) => {
-      const comparer = el("a", { href: `cv.html?offre=${encodeURIComponent(o.id)}`, class: "offre-cv", text: "Analyser pour cette offre" });
+      const choisie = offre && String(offre.id) === String(o.id);
+      const comparer = el("a", { href: `cv.html?offre=${encodeURIComponent(o.id)}`, class: "offre-cv",
+        text: choisie ? "✓ Analyse affichée au-dessus" : "Analyser pour cette offre" });
       comparer.addEventListener("click", (e) => {
         e.preventDefault();
         cible = "une"; $("offre-recherche").value = ""; remplirOffres(); $("offre-select").value = o.id; majCible();
         history.replaceState(null, "", `cv.html?offre=${encodeURIComponent(o.id)}`);
         analyser();
+        const carte = document.querySelector(".cv-score-card");
+        carte.classList.remove("is-flash"); void carte.offsetWidth; carte.classList.add("is-flash");
       });
-      $("top-offres").append(el("li", {},
+      $("top-offres").append(el("li", { class: choisie ? "is-choisie" : null },
         el("span", { class: "cv-top-pct", text: `${pct} %` }),
         el("div", { class: "cv-top-info" },
           el("strong", { text: o.intitule }),
@@ -226,7 +230,8 @@
     liste.push(...conseilsGeneraux(texteCV, offre));
     clear($("conseils"));
     liste.slice(0, 9).forEach((c) => $("conseils").append(el("li", {}, el("strong", { text: c.titre }), el("p", { class: "src", text: c.texte }))));
-    $("resultat").scrollIntoView({ behavior: "smooth", block: "start" });
+    const y = $("resultat").getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({ top: y, behavior: "smooth" });
   }
   $("analyser").addEventListener("click", analyser);
 

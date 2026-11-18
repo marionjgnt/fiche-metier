@@ -241,3 +241,7 @@ footer { border-top: 1px solid var(--line); margin-top: 3rem; }
   .cv-top-liste li { grid-template-columns: auto minmax(0, 1fr); }
   .cv-top-liste .offre-liens { grid-column: 1 / -1; justify-items: start; }
 }
+.cv-top-liste li.is-choisie { border-color: var(--brand); box-shadow: 0 0 0 2px var(--brand) inset; }
+.cv-top-liste li.is-choisie .offre-cv { font-weight: 800; }
+@keyframes cv-flash { 0% { box-shadow: 0 0 0 0 rgba(219, 39, 119, .7); } 100% { box-shadow: 0 0 0 18px rgba(219, 39, 119, 0); } }
+.cv-score-card.is-flash { animation: cv-flash 1.2s ease-out 2; border-color: var(--brand-2); }
