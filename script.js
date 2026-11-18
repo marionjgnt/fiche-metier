@@ -219,7 +219,8 @@ async function pageAccueil() {
 
   const src = c && c.evolution && c.evolution.source;
   const se = $("source-emploi");
-  if (src) {
+  if (!se) {} // cadre retiré de la page
+  else if (src) {
     se.append(el("p", {}, el("a", { href: src.url, target: "_blank", rel: "noopener", text: src.titre })),
       el("p", { class: "src", text: src.date }),
       el("ul", { class: "quote-list" }, src.points.map((p) => el("li", { text: p }))),
@@ -227,7 +228,9 @@ async function pageAccueil() {
   } else se.append(todo("À compléter", "ajoutez une source emploi (Apec, France Travail, WEF) dans data/contenu.json."));
 
   const pros = $("pros");
-  ((c && c.evolution && c.evolution.professionnels) || []).forEach((p) => {
+  const listePros = (c && c.evolution && c.evolution.professionnels) || [];
+  if (listePros.length && $("pros-titre")) $("pros-titre").hidden = false; // titre affiché seulement s'il y a des témoignages
+  listePros.forEach((p) => {
     const corps = p.points && p.points.length
       ? el("ul", { class: "quote-list" }, p.points.map((x) => el("li", { text: x })))
       : todo(p.statut === "a_venir" ? "À venir" : "À compléter",
