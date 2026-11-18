@@ -230,3 +230,14 @@ footer { border-top: 1px solid var(--line); margin-top: 3rem; }
 }
 .offre-liens { display: grid; justify-items: end; gap: .3rem; }
 .offre-cv { color: var(--brand-2); }
+.cv-top-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.cv-top-liste li { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem;
+  padding: .8rem 1rem; border: 1px solid var(--line); border-radius: 14px; background: var(--soft); }
+.cv-top-pct { min-width: 3.6rem; text-align: center; font-weight: 800; font-size: 1.1rem; color: #fff;
+  padding: .45rem .5rem; border-radius: 12px; background: var(--grad); }
+.cv-top-info { display: grid; gap: .1rem; }
+.cv-top-info .src { margin: 0; }
+@media (max-width: 760px) {
+  .cv-top-liste li { grid-template-columns: auto minmax(0, 1fr); }
+  .cv-top-liste .offre-liens { grid-column: 1 / -1; justify-items: start; }
+}

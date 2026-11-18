@@ -182,6 +182,32 @@
       : pctScore >= 45 ? "Bonne base : quelques ajouts ciblés rendront votre CV nettement plus visible."
       : "Votre CV montre encore peu de ce que demandent les annonces : suivez les conseils prioritaires ci-dessous.";
 
+    // top 5 des offres : part des compétences de l'offre présentes dans le CV
+    // (offres avec au moins 5 compétences repérées, pour éviter les 100 % trop faciles)
+    const classement = offres.filter((o) => (o.termes || []).length >= 5).map((o) => {
+      const faits = o.termes.filter((n) => presents.has(n));
+      return { o, faits: faits.length, total: o.termes.length, pct: Math.round(faits.length / o.termes.length * 100) };
+    }).sort((a, b) => b.pct - a.pct || b.faits - a.faits).slice(0, 5);
+    $("src-top").textContent = `Calcul : part des compétences demandées dans chaque offre que l'on retrouve dans votre CV (${fmt(offres.length)} offres comparées).`;
+    clear($("top-offres"));
+    classement.forEach(({ o, faits, total, pct }) => {
+      const comparer = el("a", { href: `cv.html?offre=${encodeURIComponent(o.id)}`, class: "offre-cv", text: "Analyser pour cette offre" });
+      comparer.addEventListener("click", (e) => {
+        e.preventDefault();
+        cible = "une"; $("offre-recherche").value = ""; remplirOffres(); $("offre-select").value = o.id; majCible();
+        history.replaceState(null, "", `cv.html?offre=${encodeURIComponent(o.id)}`);
+        analyser();
+      });
+      $("top-offres").append(el("li", {},
+        el("span", { class: "cv-top-pct", text: `${pct} %` }),
+        el("div", { class: "cv-top-info" },
+          el("strong", { text: o.intitule }),
+          el("span", { class: "src", text: [o.entreprise, o.lieu, o.contrat_libelle || o.contrat].filter(Boolean).join(" · ") }),
+          el("span", { class: "src", text: `${faits} compétence${faits > 1 ? "s" : ""} sur ${total} déjà dans votre CV` })),
+        el("div", { class: "offre-liens" },
+          el("a", { href: o.url, target: "_blank", rel: "noopener", text: "Voir l'offre →" }), comparer)));
+    });
+
     // compétences
     const pctTxt = (t) => offre ? "" : ` · ${fmtPct(t.pct)}`;
     $("src-presents").textContent = `${ok.length} sur ${attendus.length} ${offre ? "compétences citées dans l'offre" : "compétences demandées dans au moins 10 % des offres"}.`;
