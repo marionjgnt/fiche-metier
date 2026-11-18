@@ -239,32 +239,34 @@ async function pageAccueil() {
     pros.append(el("div", { class: "card pro" }, el("div", { class: "pro-date", text: p.date }), el("h3", { text: p.profil }), metier, corps));
   });
 
-  // acteurs
-  const ac = a.acteurs;
-  $("src-recruteurs").textContent = `${srcLine(m)}. ${ac.n_recruteurs} employeurs identifiés ; ${ac.sans_employeur} offres sans employeur indiqué. Classement automatique, à vérifier.`;
-  renderTable($("recruteurs"), [{ label: "Entreprise" }, { label: "Offres", num: true }, { label: "Type" }],
-    ac.recruteurs.slice(0, 12).map((r) => [r.entreprise, String(r.n),
-      el("span", { class: `badge ${r.type.startsWith("Employeur") ? "ok" : ""}`, text: r.type.startsWith("Employeur") ? "Employeur direct (présumé)" : "Intermédiaire / école" })]));
-  const mc = ac.marche_cache, box = $("cache");
-  if (mc) {
-    $("src-cache").textContent = `${mc.source} · ${mc.filtre} · relevé du ${fmtDate(mc.date)}`;
-    box.append(el("p", {}, el("strong", { text: `${fmt(mc.total)} entreprises` }), ` correspondent dans le Puy-de-Dôme ; `,
-      el("strong", { text: `${fmt(mc.publient_une_offre)} (${fmtPct(mc.part_visible)})` }), " publient actuellement une offre de ce métier. Les autres recrutent, s'ils recrutent, sans annonce visible."));
-    const b1 = el("div", { class: "bars", style: "margin-top:1rem" });
-    box.append(b1);
-    renderBars(b1, Object.entries(mc.par_effectif).map(([k, v]) => ({ label: `${k} salariés`.replace("0 salarié ou non renseigné salariés", "0 salarié ou non renseigné"), value: v, display: String(v) })), { cls: "ok" });
-    const card = $("cibles");
-    renderTable(card, [{ label: "Entreprise" }, { label: "Commune" }, { label: "Activité" }, { label: "Effectif" }, { label: "Annonce ?" }],
-      mc.cibles.slice(0, 25).map((e) => [e.nom, e.commune, e.naf, e.effectif,
-        el("span", { class: `badge ${e.publie_une_offre ? "ok" : ""}`, text: e.publie_une_offre ? "publie une offre" : "pas d'annonce" })]));
-  } else {
-    box.append(todo("Pas encore de données", "la collecte des entreprises du 63 se lance avec le workflow GitHub."));
-    $("cibles-card").hidden = true;
+  // acteurs (section retirée de la page : rien à afficher si elle est absente)
+  if ($("recruteurs")) {
+    const ac = a.acteurs;
+    $("src-recruteurs").textContent = `${srcLine(m)}. ${ac.n_recruteurs} employeurs identifiés ; ${ac.sans_employeur} offres sans employeur indiqué. Classement automatique, à vérifier.`;
+    renderTable($("recruteurs"), [{ label: "Entreprise" }, { label: "Offres", num: true }, { label: "Type" }],
+      ac.recruteurs.slice(0, 12).map((r) => [r.entreprise, String(r.n),
+        el("span", { class: `badge ${r.type.startsWith("Employeur") ? "ok" : ""}`, text: r.type.startsWith("Employeur") ? "Employeur direct (présumé)" : "Intermédiaire / école" })]));
+    const mc = ac.marche_cache, box = $("cache");
+    if (mc) {
+      $("src-cache").textContent = `${mc.source} · ${mc.filtre} · relevé du ${fmtDate(mc.date)}`;
+      box.append(el("p", {}, el("strong", { text: `${fmt(mc.total)} entreprises` }), ` correspondent dans le Puy-de-Dôme ; `,
+        el("strong", { text: `${fmt(mc.publient_une_offre)} (${fmtPct(mc.part_visible)})` }), " publient actuellement une offre de ce métier. Les autres recrutent, s'ils recrutent, sans annonce visible."));
+      const b1 = el("div", { class: "bars", style: "margin-top:1rem" });
+      box.append(b1);
+      renderBars(b1, Object.entries(mc.par_effectif).map(([k, v]) => ({ label: `${k} salariés`.replace("0 salarié ou non renseigné salariés", "0 salarié ou non renseigné"), value: v, display: String(v) })), { cls: "ok" });
+      const card = $("cibles");
+      renderTable(card, [{ label: "Entreprise" }, { label: "Commune" }, { label: "Activité" }, { label: "Effectif" }, { label: "Annonce ?" }],
+        mc.cibles.slice(0, 25).map((e) => [e.nom, e.commune, e.naf, e.effectif,
+          el("span", { class: `badge ${e.publie_une_offre ? "ok" : ""}`, text: e.publie_une_offre ? "publie une offre" : "pas d'annonce" })]));
+    } else {
+      box.append(todo("Pas encore de données", "la collecte des entreprises du 63 se lance avec le workflow GitHub."));
+      $("cibles-card").hidden = true;
+    }
+    const lk = $("linkedin"), li = c && c.linkedin;
+    lk.append(el("strong", { text: "À la main, sur LinkedIn : " }),
+      li && li.profils_reperes ? `${li.profils_reperes} profils de chargé(e)s de marketing digital ou opérationnel repérés. ` : "repérage des personnes qui portent ce titre dans les entreprises ci-dessus. ",
+      li ? li.note : "");
   }
-  const lk = $("linkedin"), li = c && c.linkedin;
-  lk.append(el("strong", { text: "À la main, sur LinkedIn : " }),
-    li && li.profils_reperes ? `${li.profils_reperes} profils de chargé(e)s de marketing digital ou opérationnel repérés. ` : "repérage des personnes qui portent ce titre dans les entreprises ci-dessus. ",
-    li ? li.note : "");
 
   // plan et position
   const plan = (c && c.plan || []).filter((p) => p.action && p.action.trim());
