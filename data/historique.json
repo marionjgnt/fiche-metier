@@ -142,6 +142,53 @@
     "HTML / CSS": 4
    },
    "avec_texte": 133
+  },
+  {
+   "date": "2026-11-20",
+   "nombre_offres": 142,
+   "termes": {
+    "Réseaux sociaux": 66,
+    "Fidélisation / marketing client": 52,
+    "Canva": 19,
+    "Vidéo / montage": 56,
+    "Trade marketing / animation commerciale": 45,
+    "Événementiel / salons": 47,
+    "Gestion de projet / coordination": 75,
+    "Print / PLV / supports": 24,
+    "Relation agences / prestataires": 54,
+    "Emailing / newsletters": 49,
+    "Suite Adobe (Photoshop, InDesign…)": 23,
+    "Création de contenu / rédaction": 61,
+    "Marque / branding": 17,
+    "Reporting / KPI": 73,
+    "Anglais": 36,
+    "Plan marketing / stratégie": 44,
+    "WordPress / CMS": 26,
+    "SEO / référencement naturel": 48,
+    "Excel (TCD, analyse)": 50,
+    "Shopify / PrestaShop / e-commerce": 19,
+    "Études de marché / veille": 61,
+    "Affiliation / partenariats": 8,
+    "UX / ergonomie web": 22,
+    "IA / IA générative": 33,
+    "Google Analytics / GA4": 28,
+    "ROI / budget / ROAS": 41,
+    "CRM (HubSpot, Salesforce…)": 33,
+    "Acquisition / génération de leads": 58,
+    "A/B test / optimisation de la conversion": 19,
+    "Influence / UGC": 8,
+    "Meta Ads (Facebook, Instagram)": 16,
+    "Display / programmatique / retargeting": 6,
+    "Google Ads / SEA": 30,
+    "SMS / notifications": 6,
+    "Looker Studio / Power BI / dashboards": 22,
+    "Google Tag Manager / tracking": 9,
+    "Marketing automation": 16,
+    "ChatGPT et outils d'IA": 6,
+    "LinkedIn Ads / TikTok Ads": 2,
+    "HTML / CSS": 4
+   },
+   "avec_texte": 142
   }
  ]
 }

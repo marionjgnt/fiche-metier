@@ -1,8 +1,8 @@
 {
- "date": "2026-11-18T21:05:06+00:00",
+ "date": "2026-11-20T13:48:52+00:00",
  "source": "API Recherche d'entreprises (data.gouv.fr) — base Sirene",
  "filtre": "département 63, établissements actifs, codes NAF 73.11Z, 70.21Z, 73.20Z, 47.91B",
- "exclus_opposition": 459,
+ "exclus_opposition": 457,
  "entreprises": [
   {
    "siren": "378709182",
@@ -335,7 +335,7 @@
    "naf": "73.11Z",
    "naf_libelle": "Agences de publicité",
    "commune": "CLERMONT-FERRAND",
-   "code_postal": "63100",
+   "code_postal": "63000",
    "effectif_libelle": "3 à 5",
    "effectif_rang": 2,
    "effectif_groupe": "1 à 9",
@@ -1643,6 +1643,19 @@
    "date_creation": "2025-11-01"
   },
   {
+   "siren": "992859454",
+   "nom": "ANISSA AIBOUT (AIBOUT) (LILA&CO.)",
+   "naf": "47.91B",
+   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
+   "commune": "CLERMONT-FERRAND",
+   "code_postal": "63100",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": null,
+   "date_creation": "2025-10-18"
+  },
+  {
    "siren": "847723798",
    "nom": "ANNE GUILHEM (DE SAINT ETIENNE) (TITA LINGE D'AUTREFOIS)",
    "naf": "47.91B",
@@ -2707,6 +2720,19 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2020-10-16"
+  },
+  {
+   "siren": "133012377",
+   "nom": "CLEMENT MONGEOT (CONTENDER)",
+   "naf": "70.21Z",
+   "naf_libelle": "Conseil en relations publiques et communication",
+   "commune": "BEAUMONT",
+   "code_postal": "63110",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": null,
+   "date_creation": "2026-11-17"
   },
   {
    "siren": "922138144",
@@ -5400,6 +5426,19 @@
    "date_creation": "2024-10-01"
   },
   {
+   "siren": "130433733",
+   "nom": "MAELYS FROGET (MAELYS.ASSISTANCE)",
+   "naf": "70.21Z",
+   "naf_libelle": "Conseil en relations publiques et communication",
+   "commune": "RIOM",
+   "code_postal": "63200",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": null,
+   "date_creation": "2026-09-22"
+  },
+  {
    "siren": "517950077",
    "nom": "MAGALI LARRIVEN (FLAURAUD) (ARTCHOUM)",
    "naf": "47.91B",
@@ -5738,19 +5777,6 @@
    "date_creation": "2025-07-18"
   },
   {
-   "siren": "833522568",
-   "nom": "MARION COGNARD (DEERKO COMMUNICATION)",
-   "naf": "70.21Z",
-   "naf_libelle": "Conseil en relations publiques et communication",
-   "commune": "CHAMBARON SUR MORGE",
-   "code_postal": "63200",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "2017-11-15"
-  },
-  {
    "siren": "109472266",
    "nom": "MARION GUILBAUD",
    "naf": "70.21Z",
@@ -5840,6 +5866,19 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2023-01-02"
+  },
+  {
+   "siren": "133069492",
+   "nom": "MATHIAS VINCENT (CA BOUGE BIEN)",
+   "naf": "73.11Z",
+   "naf_libelle": "Agences de publicité",
+   "commune": "CLERMONT-FERRAND",
+   "code_postal": "63100",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": null,
+   "date_creation": "2026-11-18"
   },
   {
    "siren": "992352427",
