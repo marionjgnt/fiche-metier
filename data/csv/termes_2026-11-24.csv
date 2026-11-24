@@ -1,0 +1,41 @@
+date_releve,terme,categorie,nombre_offres,part_des_offres_pct,vu_en_formation
+2026-11-24,Reporting / KPI,Compétences métier,70,51.5,non
+2026-11-24,Gestion de projet / coordination,Compétences métier,63,46.3,non
+2026-11-24,Réseaux sociaux,Réseaux sociaux et contenu,60,44.1,non
+2026-11-24,Création de contenu / rédaction,Réseaux sociaux et contenu,58,42.6,non
+2026-11-24,Études de marché / veille,Compétences métier,58,42.6,non
+2026-11-24,Fidélisation / marketing client,"CRM, emailing et automation",58,42.6,non
+2026-11-24,Acquisition / génération de leads,Acquisition et publicité,58,42.6,non
+2026-11-24,Relation agences / prestataires,Compétences métier,50,36.8,non
+2026-11-24,SEO / référencement naturel,"Site, e-commerce et SEO",48,35.3,non
+2026-11-24,Vidéo / montage,Réseaux sociaux et contenu,48,35.3,non
+2026-11-24,Trade marketing / animation commerciale,Compétences métier,46,33.8,non
+2026-11-24,"Excel (TCD, analyse)",Data et mesure,46,33.8,non
+2026-11-24,Événementiel / salons,Compétences métier,45,33.1,non
+2026-11-24,Emailing / newsletters,"CRM, emailing et automation",44,32.4,non
+2026-11-24,Plan marketing / stratégie,Compétences métier,40,29.4,non
+2026-11-24,ROI / budget / ROAS,Data et mesure,37,27.2,non
+2026-11-24,Google Ads / SEA,Acquisition et publicité,33,24.3,non
+2026-11-24,"CRM (HubSpot, Salesforce…)","CRM, emailing et automation",33,24.3,non
+2026-11-24,IA / IA générative,IA et automatisation,33,24.3,oui
+2026-11-24,Anglais,Compétences métier,32,23.5,non
+2026-11-24,Google Analytics / GA4,Data et mesure,27,19.9,non
+2026-11-24,WordPress / CMS,"Site, e-commerce et SEO",24,17.6,non
+2026-11-24,Looker Studio / Power BI / dashboards,Data et mesure,24,17.6,non
+2026-11-24,Shopify / PrestaShop / e-commerce,"Site, e-commerce et SEO",21,15.4,non
+2026-11-24,UX / ergonomie web,"Site, e-commerce et SEO",21,15.4,non
+2026-11-24,A/B test / optimisation de la conversion,Data et mesure,21,15.4,non
+2026-11-24,Print / PLV / supports,Compétences métier,20,14.7,non
+2026-11-24,"Meta Ads (Facebook, Instagram)",Acquisition et publicité,18,13.2,non
+2026-11-24,"Suite Adobe (Photoshop, InDesign…)",Réseaux sociaux et contenu,17,12.5,non
+2026-11-24,Canva,Réseaux sociaux et contenu,16,11.8,oui
+2026-11-24,Marketing automation,"CRM, emailing et automation",15,11.0,non
+2026-11-24,Marque / branding,Compétences métier,14,10.3,non
+2026-11-24,Google Tag Manager / tracking,Data et mesure,11,8.1,non
+2026-11-24,SMS / notifications,"CRM, emailing et automation",8,5.9,non
+2026-11-24,Affiliation / partenariats,Acquisition et publicité,8,5.9,non
+2026-11-24,Influence / UGC,Réseaux sociaux et contenu,7,5.1,non
+2026-11-24,ChatGPT et outils d'IA,IA et automatisation,6,4.4,oui
+2026-11-24,Display / programmatique / retargeting,Acquisition et publicité,5,3.7,non
+2026-11-24,HTML / CSS,"Site, e-commerce et SEO",4,2.9,non
+2026-11-24,LinkedIn Ads / TikTok Ads,Acquisition et publicité,3,2.2,non

@@ -1,8 +1,8 @@
 {
- "date": "2026-11-20T13:48:52+00:00",
+ "date": "2026-11-24T15:29:40+00:00",
  "source": "API Recherche d'entreprises (data.gouv.fr) — base Sirene",
  "filtre": "département 63, établissements actifs, codes NAF 73.11Z, 70.21Z, 73.20Z, 47.91B",
- "exclus_opposition": 457,
+ "exclus_opposition": 456,
  "entreprises": [
   {
    "siren": "378709182",
@@ -900,19 +900,6 @@
    "effectif_groupe": "1 à 9",
    "categorie": "PME",
    "date_creation": "2010-01-01"
-  },
-  {
-   "siren": "841764913",
-   "nom": "LE PUY DE LA COM",
-   "naf": "70.21Z",
-   "naf_libelle": "Conseil en relations publiques et communication",
-   "commune": "CLERMONT-FERRAND",
-   "code_postal": "63100",
-   "effectif_libelle": "1 à 2",
-   "effectif_rang": 1,
-   "effectif_groupe": "1 à 9",
-   "categorie": "PME",
-   "date_creation": "2018-08-10"
   },
   {
    "siren": "894231034",

@@ -189,6 +189,53 @@
     "HTML / CSS": 4
    },
    "avec_texte": 142
+  },
+  {
+   "date": "2026-11-24",
+   "nombre_offres": 136,
+   "termes": {
+    "Google Analytics / GA4": 27,
+    "ROI / budget / ROAS": 37,
+    "Google Ads / SEA": 33,
+    "Relation agences / prestataires": 50,
+    "Meta Ads (Facebook, Instagram)": 18,
+    "Suite Adobe (Photoshop, InDesign…)": 17,
+    "Trade marketing / animation commerciale": 46,
+    "Canva": 16,
+    "Création de contenu / rédaction": 58,
+    "Shopify / PrestaShop / e-commerce": 21,
+    "Print / PLV / supports": 20,
+    "SEO / référencement naturel": 48,
+    "Événementiel / salons": 45,
+    "Excel (TCD, analyse)": 46,
+    "Anglais": 32,
+    "Réseaux sociaux": 60,
+    "Vidéo / montage": 48,
+    "Emailing / newsletters": 44,
+    "SMS / notifications": 8,
+    "Plan marketing / stratégie": 40,
+    "Études de marché / veille": 58,
+    "Reporting / KPI": 70,
+    "CRM (HubSpot, Salesforce…)": 33,
+    "Fidélisation / marketing client": 58,
+    "Acquisition / génération de leads": 58,
+    "Influence / UGC": 7,
+    "IA / IA générative": 33,
+    "Gestion de projet / coordination": 63,
+    "ChatGPT et outils d'IA": 6,
+    "UX / ergonomie web": 21,
+    "A/B test / optimisation de la conversion": 21,
+    "WordPress / CMS": 24,
+    "Marketing automation": 15,
+    "Looker Studio / Power BI / dashboards": 24,
+    "Google Tag Manager / tracking": 11,
+    "LinkedIn Ads / TikTok Ads": 3,
+    "Affiliation / partenariats": 8,
+    "Marque / branding": 14,
+    "Display / programmatique / retargeting": 5,
+    "HTML / CSS": 4
+   },
+   "avec_texte": 136
   }
  ]
 }
