@@ -1,8 +1,8 @@
 {
- "date": "2026-11-24T15:29:40+00:00",
+ "date": "2026-11-27T14:38:28+00:00",
  "source": "API Recherche d'entreprises (data.gouv.fr) — base Sirene",
  "filtre": "département 63, établissements actifs, codes NAF 73.11Z, 70.21Z, 73.20Z, 47.91B",
- "exclus_opposition": 456,
+ "exclus_opposition": 457,
  "entreprises": [
   {
    "siren": "378709182",
@@ -1253,19 +1253,6 @@
    "date_creation": "2022-09-01"
   },
   {
-   "siren": "530085570",
-   "nom": "ADRIEN PERRIER-CUSSAC (PERRIER)",
-   "naf": "70.21Z",
-   "naf_libelle": "Conseil en relations publiques et communication",
-   "commune": "LA ROCHE-BLANCHE",
-   "code_postal": "63670",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "2011-01-07"
-  },
-  {
    "siren": "981252315",
    "nom": "AGOSANTE",
    "naf": "47.91B",
@@ -1500,6 +1487,19 @@
    "date_creation": "2012-11-15"
   },
   {
+   "siren": "942083346",
+   "nom": "ALLAOUA NAIT MOULOUD (ATELIER D'ART)",
+   "naf": "47.91B",
+   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
+   "commune": "CLERMONT-FERRAND",
+   "code_postal": "63100",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": null,
+   "date_creation": "2025-03-15"
+  },
+  {
    "siren": "842905028",
    "nom": "AMANDINE PAUGNAT",
    "naf": "70.21Z",
@@ -1537,19 +1537,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2003-01-22"
-  },
-  {
-   "siren": "993709377",
-   "nom": "ANAELLE ROUGIER (MYTHANORA)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "ORCET",
-   "code_postal": "63670",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": null,
-   "date_creation": "2025-11-10"
   },
   {
    "siren": "924150006",
@@ -2499,19 +2486,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2024-09-10"
-  },
-  {
-   "siren": "943607655",
-   "nom": "CHLOE CARPENTIER (L'ATELIER DOUCEUR)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "CLERMONT-FERRAND",
-   "code_postal": "63000",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": null,
-   "date_creation": "2025-05-12"
   },
   {
    "siren": "325114627",
@@ -6050,6 +6024,19 @@
    "date_creation": "2021-07-12"
   },
   {
+   "siren": "521574384",
+   "nom": "MICHAEL REDONDAUD (MRED)",
+   "naf": "47.91B",
+   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
+   "commune": "CLERMONT-FERRAND",
+   "code_postal": "63100",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": "PME",
+   "date_creation": "2010-05-01"
+  },
+  {
    "siren": "833961683",
    "nom": "MICHEL ROCHE",
    "naf": "73.20Z",
@@ -6739,19 +6726,6 @@
    "date_creation": "2021-10-04"
   },
   {
-   "siren": "394096531",
-   "nom": "PHILIPPE BELGRAND",
-   "naf": "70.21Z",
-   "naf_libelle": "Conseil en relations publiques et communication",
-   "commune": "RENNES",
-   "code_postal": "35700",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "1994-02-15"
-  },
-  {
    "siren": "326188877",
    "nom": "PHILIPPE BERANGE (LE BAR A PARFUMS)",
    "naf": "47.91B",
@@ -7166,19 +7140,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "2019-05-14"
-  },
-  {
-   "siren": "106210370",
-   "nom": "ROMAIN PINSONNAUX-FOND (ROM INFORMATIK)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "CLERMONT-FERRAND",
-   "code_postal": "63000",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": null,
-   "date_creation": "2026-06-11"
   },
   {
    "siren": "944513480",
@@ -7673,19 +7634,6 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "ETI",
    "date_creation": "2023-05-04"
-  },
-  {
-   "siren": "837589134",
-   "nom": "STELIANA PUJOLRAS (GRIGORE) (EDITIONS POST-SCRIPTUM)",
-   "naf": "47.91B",
-   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
-   "commune": "MONTAIGUT-EN-COMBRAILLE",
-   "code_postal": "63700",
-   "effectif_libelle": "non renseigné",
-   "effectif_rang": 0,
-   "effectif_groupe": "0 salarié ou non renseigné",
-   "categorie": "PME",
-   "date_creation": "2018-03-01"
   },
   {
    "siren": "524674967",
@@ -8401,6 +8349,19 @@
    "effectif_groupe": "0 salarié ou non renseigné",
    "categorie": "PME",
    "date_creation": "1989-01-01"
+  },
+  {
+   "siren": "528171812",
+   "nom": "YVES COTTET (METAYCFORTH)",
+   "naf": "47.91B",
+   "naf_libelle": "Vente à distance sur catalogue spécialisé (e-commerce)",
+   "commune": "GOUTTIERES",
+   "code_postal": "63390",
+   "effectif_libelle": "non renseigné",
+   "effectif_rang": 0,
+   "effectif_groupe": "0 salarié ou non renseigné",
+   "categorie": "PME",
+   "date_creation": "2010-10-20"
   },
   {
    "siren": "326456134",

@@ -1,7 +1,7 @@
 {
  "meta": {
-  "date_donnees": "2026-11-24T15:29:06+00:00",
-  "date_analyse": "2026-11-24T15:29:41+00:00",
+  "date_donnees": "2026-11-27T14:37:59+00:00",
+  "date_analyse": "2026-11-27T14:38:28+00:00",
   "canal": "API France Travail — Offres d'emploi v2",
   "requetes": [
    {
@@ -10,8 +10,8 @@
      "motsCles": "marketing digital"
     },
     "ok": true,
-    "recuperees": 322,
-    "total_api": 322
+    "recuperees": 331,
+    "total_api": 331
    },
    {
     "label": "mots-clés « marketing operationnel »",
@@ -19,8 +19,8 @@
      "motsCles": "marketing operationnel"
     },
     "ok": true,
-    "recuperees": 15,
-    "total_api": 15
+    "recuperees": 19,
+    "total_api": 19
    },
    {
     "label": "mots-clés « chef de projet marketing »",
@@ -28,8 +28,8 @@
      "motsCles": "chef de projet marketing"
     },
     "ok": true,
-    "recuperees": 83,
-    "total_api": 83
+    "recuperees": 76,
+    "total_api": 76
    },
    {
     "label": "mots-clés « chef de produit »",
@@ -38,56 +38,56 @@
     },
     "ok": true,
     "recuperees": 1050,
-    "total_api": 7607
+    "total_api": 7548
    }
   ],
   "code_rome": null,
   "metier": "marketing digital et opérationnel, chef(fe) de projet marketing, chef(fe) de produit",
   "offres_ecartees_intitule": 1158,
   "rome_libelle": "Chargé / Chargée de marketing digital",
-  "nombre_offres": 136,
-  "offres_avec_texte": 136,
+  "nombre_offres": 153,
+  "offres_avec_texte": 153,
   "date_plus_ancienne": "2026-08-06",
-  "date_plus_recente": "2026-11-24"
+  "date_plus_recente": "2026-11-27"
  },
  "volume": {
-  "total": 136,
+  "total": 153,
   "par_requete": {
-   "mots-clés « marketing digital »": 93,
-   "mots-clés « chef de projet marketing »": 41,
-   "mots-clés « chef de produit »": 18,
-   "mots-clés « marketing operationnel »": 14
+   "mots-clés « marketing digital »": 99,
+   "mots-clés « chef de produit »": 26,
+   "mots-clés « chef de projet marketing »": 37,
+   "mots-clés « marketing operationnel »": 17
   },
   "par_mois": {
    "2026-08": 1,
    "2026-09": 3,
-   "2026-10": 30,
-   "2026-11": 102
+   "2026-10": 23,
+   "2026-11": 126
   },
-  "publiees_7_jours": 52,
-  "publiees_30_jours": 114
+  "publiees_7_jours": 68,
+  "publiees_30_jours": 130
  },
  "geographie": {
   "zones": [
    {
     "zone": "Puy-de-Dôme (63)",
     "n": 2,
-    "pct": 1.5
+    "pct": 1.3
    },
    {
     "zone": "Auvergne-Rhône-Alpes hors Puy-de-Dôme (ou département non précisé)",
-    "n": 11,
-    "pct": 8.1
+    "n": 18,
+    "pct": 11.8
    },
    {
     "zone": "Autres régions de métropole",
-    "n": 120,
-    "pct": 88.2
+    "n": 130,
+    "pct": 85.0
    },
    {
     "zone": "Outre-mer",
     "n": 2,
-    "pct": 1.5
+    "pct": 1.3
    },
    {
     "zone": "Localisation non précisée (France entière / non renseignée)",
@@ -100,69 +100,69 @@
   "regions": [
    {
     "region": "Île-de-France",
-    "n": 74,
-    "pct": 54.4
+    "n": 80,
+    "pct": 52.3
    },
    {
     "region": "Auvergne-Rhône-Alpes",
-    "n": 13,
-    "pct": 9.6
+    "n": 20,
+    "pct": 13.1
    },
    {
     "region": "Occitanie",
-    "n": 11,
-    "pct": 8.1
+    "n": 14,
+    "pct": 9.2
    },
    {
     "region": "Provence-Alpes-Côte d'Azur",
-    "n": 9,
-    "pct": 6.6
-   },
-   {
-    "region": "Hauts-de-France",
-    "n": 6,
-    "pct": 4.4
-   },
-   {
-    "region": "Nouvelle-Aquitaine",
-    "n": 5,
-    "pct": 3.7
+    "n": 10,
+    "pct": 6.5
    },
    {
     "region": "Grand Est",
-    "n": 5,
-    "pct": 3.7
+    "n": 7,
+    "pct": 4.6
    },
    {
     "region": "Centre-Val de Loire",
     "n": 5,
-    "pct": 3.7
+    "pct": 3.3
+   },
+   {
+    "region": "Hauts-de-France",
+    "n": 4,
+    "pct": 2.6
+   },
+   {
+    "region": "Bretagne",
+    "n": 4,
+    "pct": 2.6
    }
   ],
   "departements": [
    {
     "departement": "75",
-    "n": 36
+    "n": 34
    },
    {
     "departement": "92",
-    "n": 16
+    "n": 17
    },
    {
     "departement": "69",
-    "n": 7
+    "n": 12
    },
    {
     "departement": "78",
-    "n": 6
+    "n": 8
    },
    {
     "departement": "91",
-    "n": 6
+    "n": 7
    },
    {
     "departement": "93",
-    "n": 5
+    "n": 6
    },
    {
     "departement": "84",
@@ -170,37 +170,42 @@
    },
    {
     "departement": "94",
-    "n": 4
+    "n": 5
    }
   ],
   "villes": [
    {
     "ville": "Paris",
-    "n": 36,
-    "pct": 26.5
+    "n": 34,
+    "pct": 22.2
    },
    {
     "ville": "Lyon",
-    "n": 7,
-    "pct": 5.1
+    "n": 9,
+    "pct": 5.9
    },
    {
     "ville": "Montpellier",
     "n": 3,
-    "pct": 2.2
+    "pct": 2.0
+   },
+   {
+    "ville": "Toulouse",
+    "n": 3,
+    "pct": 2.0
    },
    {
     "ville": "Clermont-Ferrand",
     "n": 2,
-    "pct": 1.5
-   },
-   {
-    "ville": "Lille",
-    "n": 1,
-    "pct": 0.7
+    "pct": 1.3
    },
    {
     "ville": "Nantes",
+    "n": 2,
+    "pct": 1.3
+   },
+   {
+    "ville": "Marseille",
     "n": 1,
     "pct": 0.7
    },
@@ -210,7 +215,12 @@
     "pct": 0.7
    },
    {
-    "ville": "Toulouse",
+    "ville": "Saint-Étienne",
+    "n": 1,
+    "pct": 0.7
+   },
+   {
+    "ville": "Strasbourg",
     "n": 1,
     "pct": 0.7
    },
@@ -240,7 +250,7 @@
     "pct": 0.0
    },
    {
-    "ville": "Marseille",
+    "ville": "Lille",
     "n": 0,
     "pct": 0.0
    },
@@ -260,16 +270,6 @@
     "pct": 0.0
    },
    {
-    "ville": "Saint-Étienne",
-    "n": 0,
-    "pct": 0.0
-   },
-   {
-    "ville": "Strasbourg",
-    "n": 0,
-    "pct": 0.0
-   },
-   {
     "ville": "Toulon",
     "n": 0,
     "pct": 0.0
@@ -280,92 +280,86 @@
     "pct": 0.0
    }
   ],
-  "villes_total": 52
+  "villes_total": 57
  },
  "teletravail": {
-  "mentionne": 13,
+  "mentionne": 17,
   "complet": 0,
-  "pct_mentionne": 9.6,
+  "pct_mentionne": 11.1,
   "pct_complet": 0.0
  },
  "contrats": [
   {
-   "contrat": "Alternance",
-   "n": 53,
-   "pct": 39.0
+   "contrat": "CDI",
+   "n": 59,
+   "pct": 38.6
   },
   {
-   "contrat": "CDI",
-   "n": 47,
-   "pct": 34.6
+   "contrat": "Alternance",
+   "n": 58,
+   "pct": 37.9
   },
   {
    "contrat": "CDD",
-   "n": 24,
-   "pct": 17.6
+   "n": 23,
+   "pct": 15.0
   },
   {
    "contrat": "Intérim",
-   "n": 8,
+   "n": 9,
    "pct": 5.9
   },
   {
-   "contrat": "Indépendant / freelance",
+   "contrat": "Stage",
    "n": 3,
-   "pct": 2.2
+   "pct": 2.0
   },
   {
-   "contrat": "Stage",
+   "contrat": "Indépendant / freelance",
    "n": 1,
    "pct": 0.7
   }
  ],
  "salaires": {
-  "renseigne": 40,
-  "part_renseignee": 29.4,
+  "renseigne": 47,
+  "part_renseignee": 30.7,
   "par_contrat": {
    "CDI": {
-    "n": 17,
-    "mediane": 3750,
-    "min": 1867,
+    "n": 24,
+    "mediane": 3542,
+    "min": 1810,
     "max": 5833,
-    "q1": 3062,
-    "q3": 4896
+    "q1": 2677,
+    "q3": 4531
    },
    "CDD": {
     "n": 12,
-    "mediane": 3062,
+    "mediane": 2954,
     "min": 1867,
     "max": 5000,
-    "q1": 2525,
+    "q1": 2500,
     "q3": 3750
    },
    "Alternance": {
     "n": 6,
-    "mediane": 1350,
+    "mediane": 1450,
     "min": 800,
     "max": 2300
    },
    "Intérim": {
-    "n": 4,
-    "mediane": 4438,
+    "n": 5,
+    "mediane": 4167,
     "min": 3750,
     "max": 5833
-   },
-   "Stage": {
-    "n": 1,
-    "mediane": 1667,
-    "min": 1667,
-    "max": 1667
    }
   },
   "hors_alternance": {
-   "n": 34,
-   "mediane": 3646,
-   "min": 1667,
+   "n": 41,
+   "mediane": 3542,
+   "min": 1810,
    "max": 5833,
-   "q1": 2861,
-   "q3": 4615
+   "q1": 2633,
+   "q3": 4312
   },
   "repere_externe": null,
   "unite": "salaire brut mensuel en euros (annuel ÷ durée en mois, horaire × 151,67 h)"
@@ -373,53 +367,53 @@
  "intitules": [
   {
    "intitule": "Chef de projet marketing (H/F)",
-   "n": 10,
-   "pct": 7.4
+   "n": 7,
+   "pct": 4.6
   },
   {
    "intitule": "Chargé / Chargée marketing digital (H/F)",
    "n": 6,
-   "pct": 4.4
-  },
-  {
-   "intitule": "Chef de Produit H/F",
-   "n": 4,
-   "pct": 2.9
+   "pct": 3.9
   },
   {
    "intitule": "Responsable marketing digital (H/F)",
-   "n": 3,
-   "pct": 2.2
+   "n": 4,
+   "pct": 2.6
   },
   {
-   "intitule": "Chef de Produit Marketing International IVD-Chimie Clinique (H/F)",
+   "intitule": "Chef de produit f/h (H/F)",
    "n": 2,
-   "pct": 1.5
+   "pct": 1.3
+  },
+  {
+   "intitule": "Chef de produit marketing (H/F)",
+   "n": 2,
+   "pct": 1.3
+  },
+  {
+   "intitule": "Chargé(e) de projet marketing digital H/F (H/F)",
+   "n": 2,
+   "pct": 1.3
+  },
+  {
+   "intitule": "Alternance Chargé Marketing digital et communication - Paris (F/H)",
+   "n": 2,
+   "pct": 1.3
+  },
+  {
+   "intitule": "Responsable marketing opérationnel H/F",
+   "n": 2,
+   "pct": 1.3
+  },
+  {
+   "intitule": "Alternance Assistant Assistant chef de projet Marketing Client & CRM - Paris (F/H)",
+   "n": 2,
+   "pct": 1.3
   },
   {
    "intitule": "Alternance Assistant(e) E-commerce, CRM & Marketing Digital / Alternance - Paris (H/F)",
    "n": 2,
-   "pct": 1.5
-  },
-  {
-   "intitule": "Chef de Produit Urologie (F/H)",
-   "n": 2,
-   "pct": 1.5
-  },
-  {
-   "intitule": "Chef de Projet Marketing Digital H/F",
-   "n": 2,
-   "pct": 1.5
-  },
-  {
-   "intitule": "Alternance Assistant Communication & Marketing Digital (H/F) - Villepinte (F/H)",
-   "n": 2,
-   "pct": 1.5
-  },
-  {
-   "intitule": "Alternance Assistant-e Marketing Digital Musical - Paris (F/H)",
-   "n": 2,
-   "pct": 1.5
+   "pct": 1.3
   }
  ],
  "competences": {
@@ -427,281 +421,288 @@
    {
     "terme": "Reporting / KPI",
     "categorie": "Compétences métier",
-    "n": 70,
-    "pct": 51.5,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Gestion de projet / coordination",
-    "categorie": "Compétences métier",
-    "n": 63,
-    "pct": 46.3,
+    "n": 76,
+    "pct": 49.7,
     "vu_en_formation": false
    },
    {
     "terme": "Réseaux sociaux",
     "categorie": "Réseaux sociaux et contenu",
-    "n": 60,
-    "pct": 44.1,
+    "n": 71,
+    "pct": 46.4,
     "vu_en_formation": false
    },
    {
-    "terme": "Création de contenu / rédaction",
-    "categorie": "Réseaux sociaux et contenu",
-    "n": 58,
-    "pct": 42.6,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Études de marché / veille",
+    "terme": "Gestion de projet / coordination",
     "categorie": "Compétences métier",
-    "n": 58,
-    "pct": 42.6,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Fidélisation / marketing client",
-    "categorie": "CRM, emailing et automation",
-    "n": 58,
-    "pct": 42.6,
+    "n": 69,
+    "pct": 45.1,
     "vu_en_formation": false
    },
    {
     "terme": "Acquisition / génération de leads",
     "categorie": "Acquisition et publicité",
-    "n": 58,
-    "pct": 42.6,
+    "n": 67,
+    "pct": 43.8,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Création de contenu / rédaction",
+    "categorie": "Réseaux sociaux et contenu",
+    "n": 65,
+    "pct": 42.5,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Fidélisation / marketing client",
+    "categorie": "CRM, emailing et automation",
+    "n": 62,
+    "pct": 40.5,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Études de marché / veille",
+    "categorie": "Compétences métier",
+    "n": 61,
+    "pct": 39.9,
     "vu_en_formation": false
    },
    {
     "terme": "Relation agences / prestataires",
     "categorie": "Compétences métier",
-    "n": 50,
-    "pct": 36.8,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "SEO / référencement naturel",
-    "categorie": "Site, e-commerce et SEO",
-    "n": 48,
-    "pct": 35.3,
+    "n": 58,
+    "pct": 37.9,
     "vu_en_formation": false
    },
    {
     "terme": "Vidéo / montage",
     "categorie": "Réseaux sociaux et contenu",
-    "n": 48,
-    "pct": 35.3,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Trade marketing / animation commerciale",
-    "categorie": "Compétences métier",
-    "n": 46,
-    "pct": 33.8,
+    "n": 56,
+    "pct": 36.6,
     "vu_en_formation": false
    },
    {
     "terme": "Excel (TCD, analyse)",
     "categorie": "Data et mesure",
-    "n": 46,
-    "pct": 33.8,
+    "n": 55,
+    "pct": 35.9,
     "vu_en_formation": false
    },
    {
-    "terme": "Événementiel / salons",
+    "terme": "SEO / référencement naturel",
+    "categorie": "Site, e-commerce et SEO",
+    "n": 53,
+    "pct": 34.6,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Trade marketing / animation commerciale",
     "categorie": "Compétences métier",
-    "n": 45,
-    "pct": 33.1,
+    "n": 49,
+    "pct": 32.0,
     "vu_en_formation": false
    },
    {
     "terme": "Emailing / newsletters",
     "categorie": "CRM, emailing et automation",
-    "n": 44,
-    "pct": 32.4,
+    "n": 49,
+    "pct": 32.0,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Événementiel / salons",
+    "categorie": "Compétences métier",
+    "n": 46,
+    "pct": 30.1,
     "vu_en_formation": false
    },
    {
     "terme": "Plan marketing / stratégie",
     "categorie": "Compétences métier",
-    "n": 40,
+    "n": 45,
     "pct": 29.4,
     "vu_en_formation": false
    },
    {
-    "terme": "ROI / budget / ROAS",
-    "categorie": "Data et mesure",
-    "n": 37,
-    "pct": 27.2,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Google Ads / SEA",
-    "categorie": "Acquisition et publicité",
-    "n": 33,
-    "pct": 24.3,
+    "terme": "Anglais",
+    "categorie": "Compétences métier",
+    "n": 41,
+    "pct": 26.8,
     "vu_en_formation": false
    },
    {
     "terme": "CRM (HubSpot, Salesforce…)",
     "categorie": "CRM, emailing et automation",
-    "n": 33,
-    "pct": 24.3,
+    "n": 41,
+    "pct": 26.8,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "ROI / budget / ROAS",
+    "categorie": "Data et mesure",
+    "n": 39,
+    "pct": 25.5,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Google Ads / SEA",
+    "categorie": "Acquisition et publicité",
+    "n": 38,
+    "pct": 24.8,
     "vu_en_formation": false
    },
    {
     "terme": "IA / IA générative",
     "categorie": "IA et automatisation",
-    "n": 33,
-    "pct": 24.3,
+    "n": 37,
+    "pct": 24.2,
     "vu_en_formation": true
-   },
-   {
-    "terme": "Anglais",
-    "categorie": "Compétences métier",
-    "n": 32,
-    "pct": 23.5,
-    "vu_en_formation": false
    },
    {
     "terme": "Google Analytics / GA4",
     "categorie": "Data et mesure",
-    "n": 27,
-    "pct": 19.9,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "WordPress / CMS",
-    "categorie": "Site, e-commerce et SEO",
-    "n": 24,
-    "pct": 17.6,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Looker Studio / Power BI / dashboards",
-    "categorie": "Data et mesure",
-    "n": 24,
-    "pct": 17.6,
+    "n": 29,
+    "pct": 19.0,
     "vu_en_formation": false
    },
    {
     "terme": "Shopify / PrestaShop / e-commerce",
     "categorie": "Site, e-commerce et SEO",
-    "n": 21,
-    "pct": 15.4,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "UX / ergonomie web",
-    "categorie": "Site, e-commerce et SEO",
-    "n": 21,
-    "pct": 15.4,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "A/B test / optimisation de la conversion",
-    "categorie": "Data et mesure",
-    "n": 21,
-    "pct": 15.4,
+    "n": 28,
+    "pct": 18.3,
     "vu_en_formation": false
    },
    {
     "terme": "Print / PLV / supports",
     "categorie": "Compétences métier",
-    "n": 20,
-    "pct": 14.7,
+    "n": 27,
+    "pct": 17.6,
     "vu_en_formation": false
+   },
+   {
+    "terme": "WordPress / CMS",
+    "categorie": "Site, e-commerce et SEO",
+    "n": 26,
+    "pct": 17.0,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Looker Studio / Power BI / dashboards",
+    "categorie": "Data et mesure",
+    "n": 23,
+    "pct": 15.0,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "UX / ergonomie web",
+    "categorie": "Site, e-commerce et SEO",
+    "n": 22,
+    "pct": 14.4,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "A/B test / optimisation de la conversion",
+    "categorie": "Data et mesure",
+    "n": 22,
+    "pct": 14.4,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Marketing automation",
+    "categorie": "CRM, emailing et automation",
+    "n": 20,
+    "pct": 13.1,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Canva",
+    "categorie": "Réseaux sociaux et contenu",
+    "n": 20,
+    "pct": 13.1,
+    "vu_en_formation": true
    },
    {
     "terme": "Meta Ads (Facebook, Instagram)",
     "categorie": "Acquisition et publicité",
-    "n": 18,
-    "pct": 13.2,
+    "n": 19,
+    "pct": 12.4,
     "vu_en_formation": false
    },
    {
     "terme": "Suite Adobe (Photoshop, InDesign…)",
     "categorie": "Réseaux sociaux et contenu",
     "n": 17,
-    "pct": 12.5,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Canva",
-    "categorie": "Réseaux sociaux et contenu",
-    "n": 16,
-    "pct": 11.8,
-    "vu_en_formation": true
-   },
-   {
-    "terme": "Marketing automation",
-    "categorie": "CRM, emailing et automation",
-    "n": 15,
-    "pct": 11.0,
+    "pct": 11.1,
     "vu_en_formation": false
    },
    {
     "terme": "Marque / branding",
     "categorie": "Compétences métier",
-    "n": 14,
-    "pct": 10.3,
+    "n": 15,
+    "pct": 9.8,
     "vu_en_formation": false
    },
    {
     "terme": "Google Tag Manager / tracking",
     "categorie": "Data et mesure",
-    "n": 11,
-    "pct": 8.1,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "SMS / notifications",
-    "categorie": "CRM, emailing et automation",
-    "n": 8,
-    "pct": 5.9,
+    "n": 14,
+    "pct": 9.2,
     "vu_en_formation": false
    },
    {
     "terme": "Affiliation / partenariats",
     "categorie": "Acquisition et publicité",
-    "n": 8,
-    "pct": 5.9,
+    "n": 11,
+    "pct": 7.2,
     "vu_en_formation": false
    },
    {
-    "terme": "Influence / UGC",
-    "categorie": "Réseaux sociaux et contenu",
+    "terme": "SMS / notifications",
+    "categorie": "CRM, emailing et automation",
+    "n": 11,
+    "pct": 7.2,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Display / programmatique / retargeting",
+    "categorie": "Acquisition et publicité",
     "n": 7,
-    "pct": 5.1,
+    "pct": 4.6,
     "vu_en_formation": false
    },
    {
     "terme": "ChatGPT et outils d'IA",
     "categorie": "IA et automatisation",
-    "n": 6,
-    "pct": 4.4,
+    "n": 7,
+    "pct": 4.6,
     "vu_en_formation": true
    },
    {
-    "terme": "Display / programmatique / retargeting",
-    "categorie": "Acquisition et publicité",
-    "n": 5,
-    "pct": 3.7,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "HTML / CSS",
-    "categorie": "Site, e-commerce et SEO",
-    "n": 4,
-    "pct": 2.9,
+    "terme": "Influence / UGC",
+    "categorie": "Réseaux sociaux et contenu",
+    "n": 7,
+    "pct": 4.6,
     "vu_en_formation": false
    },
    {
     "terme": "LinkedIn Ads / TikTok Ads",
     "categorie": "Acquisition et publicité",
-    "n": 3,
-    "pct": 2.2,
+    "n": 6,
+    "pct": 3.9,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "HTML / CSS",
+    "categorie": "Site, e-commerce et SEO",
+    "n": 5,
+    "pct": 3.3,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Automatisation / no-code",
+    "categorie": "IA et automatisation",
+    "n": 2,
+    "pct": 1.3,
     "vu_en_formation": false
    }
   ],
@@ -710,162 +711,162 @@
    {
     "terme": "Reporting / KPI",
     "categorie": "Compétences métier",
-    "n": 70,
-    "pct": 51.5,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Gestion de projet / coordination",
-    "categorie": "Compétences métier",
-    "n": 63,
-    "pct": 46.3,
+    "n": 76,
+    "pct": 49.7,
     "vu_en_formation": false
    },
    {
     "terme": "Réseaux sociaux",
     "categorie": "Réseaux sociaux et contenu",
-    "n": 60,
-    "pct": 44.1,
+    "n": 71,
+    "pct": 46.4,
     "vu_en_formation": false
    },
    {
-    "terme": "Création de contenu / rédaction",
-    "categorie": "Réseaux sociaux et contenu",
-    "n": 58,
-    "pct": 42.6,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Études de marché / veille",
+    "terme": "Gestion de projet / coordination",
     "categorie": "Compétences métier",
-    "n": 58,
-    "pct": 42.6,
-    "vu_en_formation": false
-   },
-   {
-    "terme": "Fidélisation / marketing client",
-    "categorie": "CRM, emailing et automation",
-    "n": 58,
-    "pct": 42.6,
+    "n": 69,
+    "pct": 45.1,
     "vu_en_formation": false
    },
    {
     "terme": "Acquisition / génération de leads",
     "categorie": "Acquisition et publicité",
-    "n": 58,
-    "pct": 42.6,
+    "n": 67,
+    "pct": 43.8,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Création de contenu / rédaction",
+    "categorie": "Réseaux sociaux et contenu",
+    "n": 65,
+    "pct": 42.5,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Fidélisation / marketing client",
+    "categorie": "CRM, emailing et automation",
+    "n": 62,
+    "pct": 40.5,
+    "vu_en_formation": false
+   },
+   {
+    "terme": "Études de marché / veille",
+    "categorie": "Compétences métier",
+    "n": 61,
+    "pct": 39.9,
     "vu_en_formation": false
    },
    {
     "terme": "Relation agences / prestataires",
     "categorie": "Compétences métier",
-    "n": 50,
-    "pct": 36.8,
+    "n": 58,
+    "pct": 37.9,
     "vu_en_formation": false
    }
   ],
   "api_competences": [
    {
     "libelle": "Concevoir des supports de communication et d'image",
-    "n": 10,
-    "pct": 7.4
+    "n": 14,
+    "pct": 9.2
    },
    {
     "libelle": "Optimiser la visibilité des publications sur les réseaux sociaux",
-    "n": 9,
-    "pct": 6.6
+    "n": 12,
+    "pct": 7.8
    },
    {
     "libelle": "Savoir gérer plusieurs projets ou activités simultanément",
-    "n": 7,
-    "pct": 5.1
+    "n": 8,
+    "pct": 5.2
    },
    {
     "libelle": "Mesurer le retour sur investissement d'une action marketing",
     "n": 7,
-    "pct": 5.1
+    "pct": 4.6
+   },
+   {
+    "libelle": "Mettre en place des solutions d'amélioration de la performance",
+    "n": 6,
+    "pct": 3.9
    },
    {
     "libelle": "Analyser les besoins des utilisateurs pour la création de contenus multimédias",
     "n": 6,
-    "pct": 4.4
-   },
-   {
-    "libelle": "Réaliser une veille de marché, une veille concurrentielle",
-    "n": 4,
-    "pct": 2.9
-   },
-   {
-    "libelle": "Elaborer un plan marketing, une stratégie de marque et de communication",
-    "n": 4,
-    "pct": 2.9
-   },
-   {
-    "libelle": "Recueillir et analyser les besoins client",
-    "n": 4,
-    "pct": 2.9
-   },
-   {
-    "libelle": "Maîtriser les caractéristiques d'un produit ou d'un matériau",
-    "n": 4,
-    "pct": 2.9
+    "pct": 3.9
    },
    {
     "libelle": "Effectuer un reporting régulier à la hiérarchie",
-    "n": 3,
-    "pct": 2.2
+    "n": 5,
+    "pct": 3.3
    },
    {
-    "libelle": "Mettre en place des solutions d'amélioration de la performance",
+    "libelle": "Veille concurrentielle sur le marché digital",
+    "n": 4,
+    "pct": 2.6
+   },
+   {
+    "libelle": "Réaliser des actions de relation publique, de diffusion et de promotion de l'information",
     "n": 3,
-    "pct": 2.2
+    "pct": 2.0
+   },
+   {
+    "libelle": "Marketing des réseaux sociaux",
+    "n": 3,
+    "pct": 2.0
    },
    {
     "libelle": "Concevoir des visuels pour des campagnes publicitaires",
-    "n": 2,
-    "pct": 1.5
+    "n": 3,
+    "pct": 2.0
+   },
+   {
+    "libelle": "Maîtriser les caractéristiques d'un produit ou d'un matériau",
+    "n": 3,
+    "pct": 2.0
    }
   ],
   "api_qualites": [
    {
     "libelle": "Organiser son travail selon les priorités et les objectifs",
-    "n": 7,
-    "pct": 5.1
+    "n": 11,
+    "pct": 7.2
    },
    {
     "libelle": "Etre force de proposition",
-    "n": 6,
-    "pct": 4.4
+    "n": 10,
+    "pct": 6.5
    },
    {
     "libelle": "Faire preuve de créativité, d'inventivité",
+    "n": 9,
+    "pct": 5.9
+   },
+   {
+    "libelle": "Faire preuve de rigueur et de précision",
+    "n": 6,
+    "pct": 3.9
+   },
+   {
+    "libelle": "Avoir l'esprit d'équipe",
     "n": 5,
-    "pct": 3.7
+    "pct": 3.3
    },
    {
     "libelle": "Faire preuve de leadership",
     "n": 4,
-    "pct": 2.9
-   },
-   {
-    "libelle": "Faire preuve de rigueur et de précision",
-    "n": 4,
-    "pct": 2.9
-   },
-   {
-    "libelle": "Avoir l'esprit d'équipe",
-    "n": 4,
-    "pct": 2.9
+    "pct": 2.6
    },
    {
     "libelle": "Faire preuve d'autonomie",
     "n": 2,
-    "pct": 1.5
+    "pct": 1.3
    },
    {
     "libelle": "Faire preuve de réactivité",
     "n": 2,
-    "pct": 1.5
+    "pct": 1.3
    },
    {
     "libelle": "Faire preuve de curiosité, d'ouverture d'esprit",
@@ -877,154 +878,154 @@
  },
  "mouvement": {
   "recent_vs_ancien": {
-   "n_recent": 114,
-   "n_ancien": 22,
-   "seuil": "2026-10-25",
+   "n_recent": 130,
+   "n_ancien": 23,
+   "seuil": "2026-10-28",
    "lignes": [
     {
-     "terme": "Gestion de projet / coordination",
-     "pct_recent": 50.0,
-     "pct_ancien": 27.3,
-     "ecart": 22.7,
-     "n": 63
-    },
-    {
-     "terme": "Reporting / KPI",
-     "pct_recent": 54.4,
-     "pct_ancien": 36.4,
-     "ecart": 18.0,
-     "n": 70
-    },
-    {
      "terme": "Relation agences / prestataires",
-     "pct_recent": 39.5,
-     "pct_ancien": 22.7,
-     "ecart": 16.8,
-     "n": 50
+     "pct_recent": 40.8,
+     "pct_ancien": 21.7,
+     "ecart": 19.1,
+     "n": 58
     },
     {
-     "terme": "Looker Studio / Power BI / dashboards",
-     "pct_recent": 19.3,
-     "pct_ancien": 9.1,
-     "ecart": 10.2,
-     "n": 24
-    },
-    {
-     "terme": "Excel (TCD, analyse)",
-     "pct_recent": 35.1,
-     "pct_ancien": 27.3,
-     "ecart": 7.8,
-     "n": 46
+     "terme": "Gestion de projet / coordination",
+     "pct_recent": 47.7,
+     "pct_ancien": 30.4,
+     "ecart": 17.3,
+     "n": 69
     },
     {
      "terme": "Fidélisation / marketing client",
-     "pct_recent": 43.9,
-     "pct_ancien": 36.4,
-     "ecart": 7.5,
-     "n": 58
+     "pct_recent": 42.3,
+     "pct_ancien": 30.4,
+     "ecart": 11.9,
+     "n": 62
     },
     {
-     "terme": "Trade marketing / animation commerciale",
-     "pct_recent": 34.2,
-     "pct_ancien": 31.8,
-     "ecart": 2.4,
-     "n": 46
+     "terme": "Excel (TCD, analyse)",
+     "pct_recent": 37.7,
+     "pct_ancien": 26.1,
+     "ecart": 11.6,
+     "n": 55
+    },
+    {
+     "terme": "Reporting / KPI",
+     "pct_recent": 50.8,
+     "pct_ancien": 43.5,
+     "ecart": 7.3,
+     "n": 76
+    },
+    {
+     "terme": "Vidéo / montage",
+     "pct_recent": 37.7,
+     "pct_ancien": 30.4,
+     "ecart": 7.3,
+     "n": 56
     },
     {
      "terme": "Marketing automation",
-     "pct_recent": 11.4,
-     "pct_ancien": 9.1,
-     "ecart": 2.3,
-     "n": 15
+     "pct_recent": 13.8,
+     "pct_ancien": 8.7,
+     "ecart": 5.1,
+     "n": 20
+    },
+    {
+     "terme": "SEO / référencement naturel",
+     "pct_recent": 35.4,
+     "pct_ancien": 30.4,
+     "ecart": 5.0,
+     "n": 53
     },
     {
      "terme": "Création de contenu / rédaction",
-     "pct_recent": 43.0,
-     "pct_ancien": 40.9,
-     "ecart": 2.1,
-     "n": 58
+     "pct_recent": 43.1,
+     "pct_ancien": 39.1,
+     "ecart": 4.0,
+     "n": 65
+    },
+    {
+     "terme": "IA / IA générative",
+     "pct_recent": 24.6,
+     "pct_ancien": 21.7,
+     "ecart": 2.9,
+     "n": 37
+    },
+    {
+     "terme": "Looker Studio / Power BI / dashboards",
+     "pct_recent": 15.4,
+     "pct_ancien": 13.0,
+     "ecart": 2.4,
+     "n": 23
     },
     {
      "terme": "Études de marché / veille",
-     "pct_recent": 43.0,
-     "pct_ancien": 40.9,
-     "ecart": 2.1,
-     "n": 58
+     "pct_recent": 40.0,
+     "pct_ancien": 39.1,
+     "ecart": 0.9,
+     "n": 61
+    },
+    {
+     "terme": "ChatGPT et outils d'IA",
+     "pct_recent": 4.6,
+     "pct_ancien": 4.3,
+     "ecart": 0.3,
+     "n": 7
+    },
+    {
+     "terme": "Événementiel / salons",
+     "pct_recent": 30.0,
+     "pct_ancien": 30.4,
+     "ecart": -0.4,
+     "n": 46
     },
     {
      "terme": "Google Ads / SEA",
      "pct_recent": 24.6,
-     "pct_ancien": 22.7,
-     "ecart": 1.9,
-     "n": 33
+     "pct_ancien": 26.1,
+     "ecart": -1.5,
+     "n": 38
     },
     {
-     "terme": "Événementiel / salons",
-     "pct_recent": 33.3,
-     "pct_ancien": 31.8,
-     "ecart": 1.5,
-     "n": 45
-    },
-    {
-     "terme": "ChatGPT et outils d'IA",
-     "pct_recent": 4.4,
-     "pct_ancien": 4.5,
-     "ecart": -0.1,
-     "n": 6
-    },
-    {
-     "terme": "Vidéo / montage",
-     "pct_recent": 35.1,
-     "pct_ancien": 36.4,
-     "ecart": -1.3,
-     "n": 48
-    },
-    {
-     "terme": "SEO / référencement naturel",
-     "pct_recent": 35.1,
-     "pct_ancien": 36.4,
-     "ecart": -1.3,
-     "n": 48
-    },
-    {
-     "terme": "Acquisition / génération de leads",
-     "pct_recent": 42.1,
-     "pct_ancien": 45.5,
-     "ecart": -3.4,
-     "n": 58
-    },
-    {
-     "terme": "IA / IA générative",
-     "pct_recent": 23.7,
-     "pct_ancien": 27.3,
-     "ecart": -3.6,
-     "n": 33
-    },
-    {
-     "terme": "Meta Ads (Facebook, Instagram)",
-     "pct_recent": 12.3,
-     "pct_ancien": 18.2,
-     "ecart": -5.9,
-     "n": 18
+     "terme": "Trade marketing / animation commerciale",
+     "pct_recent": 31.5,
+     "pct_ancien": 34.8,
+     "ecart": -3.3,
+     "n": 49
     },
     {
      "terme": "Réseaux sociaux",
-     "pct_recent": 41.2,
-     "pct_ancien": 59.1,
-     "ecart": -17.9,
-     "n": 60
+     "pct_recent": 45.4,
+     "pct_ancien": 52.2,
+     "ecart": -6.8,
+     "n": 71
+    },
+    {
+     "terme": "Meta Ads (Facebook, Instagram)",
+     "pct_recent": 10.8,
+     "pct_ancien": 21.7,
+     "ecart": -10.9,
+     "n": 19
+    },
+    {
+     "terme": "Acquisition / génération de leads",
+     "pct_recent": 41.5,
+     "pct_ancien": 56.5,
+     "ecart": -15.0,
+     "n": 67
     }
    ],
    "avertissement": "Comparaison indicative : échantillons modestes, et une offre ancienne encore ouverte n'est pas représentative de toutes les offres passées."
   },
   "vs_releve_precedent": null,
-  "nb_releves": 5
+  "nb_releves": 6
  },
  "acteurs": {
   "recruteurs": [
    {
     "entreprise": "ISCOD",
-    "n": 16,
+    "n": 17,
     "type": "Intermédiaire (recrutement, école, formation)",
     "lieux": [
      "28 - Tréon",
@@ -1034,7 +1035,7 @@
    },
    {
     "entreprise": "Michael Page",
-    "n": 4,
+    "n": 3,
     "type": "Intermédiaire (recrutement, école, formation)",
     "lieux": [
      "75 - Paris 9e Arrondissement",
@@ -1050,27 +1051,11 @@
     ]
    },
    {
-    "entreprise": "Collective.work",
-    "n": 2,
-    "type": "Employeur direct (présumé)",
-    "lieux": [
-     "75 - Paris"
-    ]
-   },
-   {
     "entreprise": "Forums Talents Handicap",
     "n": 2,
     "type": "Intermédiaire (recrutement, école, formation)",
     "lieux": [
      "78 - Vélizy-Villacoublay"
-    ]
-   },
-   {
-    "entreprise": "HORIBA ABX SAS",
-    "n": 2,
-    "type": "Employeur direct (présumé)",
-    "lieux": [
-     "34 - MONTPELLIER"
     ]
    },
    {
@@ -1116,6 +1101,14 @@
     ]
    },
    {
+    "entreprise": "Achil.",
+    "n": 1,
+    "type": "Employeur direct (présumé)",
+    "lieux": [
+     "14 - Caen"
+    ]
+   },
+   {
     "entreprise": "ADAPEI 35",
     "n": 1,
     "type": "Employeur direct (présumé)",
@@ -1132,19 +1125,27 @@
     ]
    },
    {
-    "entreprise": "Ajinomoto",
+    "entreprise": "AFX STUDENT EXCHANGE",
     "n": 1,
     "type": "Employeur direct (présumé)",
     "lieux": [
-     "75 - Paris 17e Arrondissement"
+     "78 - LOUVECIENNES"
     ]
    },
    {
-    "entreprise": "AMPLITUDE TRAVAIL TEMPORAIRE",
+    "entreprise": "ALTIMIS GROUP",
     "n": 1,
     "type": "Employeur direct (présumé)",
     "lieux": [
-     "10 - LA CHAPELLE-SAINT-LUC"
+     "69 - LYON"
+    ]
+   },
+   {
+    "entreprise": "ARTEVA",
+    "n": 1,
+    "type": "Employeur direct (présumé)",
+    "lieux": [
+     "69 - LIMONEST"
     ]
    },
    {
@@ -1156,11 +1157,11 @@
     ]
    },
    {
-    "entreprise": "AUTO SPORT CONSEIL",
+    "entreprise": "Groupe ATOLL",
     "n": 1,
     "type": "Employeur direct (présumé)",
     "lieux": [
-     "33 - Saint-Jean-d'Illac"
+     "42 - Saint-Étienne"
     ]
    },
    {
@@ -1204,6 +1205,14 @@
     ]
    },
    {
+    "entreprise": "CENTRALESUPELEC",
+    "n": 1,
+    "type": "Employeur direct (présumé)",
+    "lieux": [
+     "91 - GIF SUR YVETTE"
+    ]
+   },
+   {
     "entreprise": "CIORANE",
     "n": 1,
     "type": "Employeur direct (présumé)",
@@ -1212,37 +1221,29 @@
     ]
    },
    {
-    "entreprise": "COMPAGNIE DES ALPES",
+    "entreprise": "Collective.work",
     "n": 1,
     "type": "Employeur direct (présumé)",
     "lieux": [
-     "73 - Bourg-Saint-Maurice"
-    ]
-   },
-   {
-    "entreprise": "CTC Groupe",
-    "n": 1,
-    "type": "Employeur direct (présumé)",
-    "lieux": [
-     "69 - Lyon 7e Arrondissement"
+     "75 - Paris"
     ]
    }
   ],
-  "n_recruteurs": 76,
-  "sans_employeur": 33,
+  "n_recruteurs": 83,
+  "sans_employeur": 45,
   "marche_cache": {
    "source": "API Recherche d'entreprises (data.gouv.fr) — base Sirene",
-   "date": "2026-11-24T15:29:40+00:00",
+   "date": "2026-11-27T14:38:28+00:00",
    "filtre": "département 63, établissements actifs, codes NAF 73.11Z, 70.21Z, 73.20Z, 47.91B · siège dans le 63",
-   "total": 551,
+   "total": 549,
    "par_naf": {
-    "Vente à distance sur catalogue spécialisé (e-commerce)": 214,
-    "Conseil en relations publiques et communication": 195,
+    "Vente à distance sur catalogue spécialisé (e-commerce)": 213,
+    "Conseil en relations publiques et communication": 194,
     "Agences de publicité": 120,
     "Études de marché et sondages": 22
    },
    "par_effectif": {
-    "0 salarié ou non renseigné": 479,
+    "0 salarié ou non renseigné": 477,
     "1 à 9": 69,
     "10 à 49": 2,
     "50 à 249": 1,
@@ -1538,17 +1539,17 @@
      "publie_une_offre": false
     }
    ],
-   "exclus_opposition_diffusion": 456
+   "exclus_opposition_diffusion": 457
   }
  },
  "limites": [
-  "Photographie du 24/11/2026 : seules les offres déposées à France Travail (et ses partenaires) et encore ouvertes sont visibles. Ce n'est ni le total annuel ni l'ensemble du marché : beaucoup de recrutements ne passent jamais par une annonce.",
+  "Photographie du 27/11/2026 : seules les offres déposées à France Travail (et ses partenaires) et encore ouvertes sont visibles. Ce n'est ni le total annuel ni l'ensemble du marché : beaucoup de recrutements ne passent jamais par une annonce.",
   "Seules les offres dont l'intitulé parle de marketing digital ou opérationnel, de chef(fe) de projet marketing ou de chef(fe) de produit sont gardées : 1158 offres remontées par les mots-clés mais portant un autre intitulé ont été écartées. Le niveau de poste varie (assistant, chargé, chef de projet, chef de produit, responsable) : voir les intitulés en section 1.",
-  "Le salaire n'est affiché que dans 29.4 % des offres ; les moyennes ne reflètent que les employeurs qui le publient. Les salaires d'alternance suivent une grille légale et sont séparés.",
+  "Le salaire n'est affiché que dans 30.7 % des offres ; les moyennes ne reflètent que les employeurs qui le publient. Les salaires d'alternance suivent une grille légale et sont séparés.",
   "Une même offre peut être republiée plusieurs fois, ou par plusieurs agences : les volumes peuvent être gonflés.",
   "Compétences, outils et télétravail sont détectés par mots-clés dans le texte des annonces : une mention n'est pas une exigence, et un outil non cité peut quand même être utilisé.",
-  "33 offres (24.3 %) n'indiquent pas l'employeur (annonces anonymisées).",
-  "145 annonces ont été écartées : recrutement de franchisés (un même réseau publie souvent la même annonce dans des dizaines de villes) et postes de formateur ou d'enseignant en marketing digital.",
+  "45 offres (29.4 %) n'indiquent pas l'employeur (annonces anonymisées).",
+  "138 annonces ont été écartées : recrutement de franchisés (un même réseau publie souvent la même annonce dans des dizaines de villes) et postes de formateur ou d'enseignant en marketing digital.",
   "Le classement « intermédiaire / employeur direct » est automatique (mots du nom) et à vérifier."
  ]
 }
